@@ -1,0 +1,23 @@
+/*==================  Stuck menu  ======================*/
+$stuck-bg: map-get($scheme, default);
+$stuck-bc: map-get($scheme, secondary);
+
+.stuck_container {
+
+}
+
+.isStuck {
+  background: $stuck-bg;
+  z-index: 999;
+  border-bottom: 1px solid $stuck-bc;
+  padding: 17px 0 10px;
+ .nav {
+    padding: 22px 0 0;
+  }
+}
+
+@media only screen and (max-width: 979px) {
+  .isStuck {
+    display: none !important;
+  }
+}

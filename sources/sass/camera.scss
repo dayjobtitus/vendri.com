@@ -1,0 +1,267 @@
+﻿/*========================================================
+                        Camera
+=========================================================*/
+@import "_mixins.scss";
+@import "_variables.scss";
+
+$scheme: nth($schemes, 1);
+$minHeight: 400px;
+$ratio: 0.32342;
+
+.camera_container {
+  position: relative;
+  padding-bottom: ($ratio * 100%);
+}
+
+@media (max-width: ($minHeight / $ratio)) {
+  .camera_container {
+    padding-bottom: $minHeight;
+  }
+}
+
+@mixin camera-abs() {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.camera_wrap {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin-bottom: 0 !important;
+  height: 100%;
+  background: #FFF;
+  z-index: 0;
+}
+
+.camera_wrap img {
+  max-width: none !important;
+}
+
+.camera_fakehover {
+  height: 100%;
+  min-height: 60px;
+  position: relative;
+  width: 100%;
+}
+
+.camera_src {
+  display: none;
+}
+
+.cameraCont, .cameraContents {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.cameraSlide {
+  @include camera-abs();
+}
+
+.cameraContent {
+  @include camera-abs();
+  display: none;
+}
+
+.camera_target {
+  @include camera-abs();
+  overflow: hidden;
+  text-align: left;
+  z-index: 0;
+}
+
+.camera_overlayer {
+  @include camera-abs();
+  overflow: hidden;
+  z-index: 0;
+}
+
+.camera_target_content {
+  @include camera-abs();
+  overflow: hidden;
+  z-index: 2;
+}
+
+.camera_loader {
+  background: #FFF url(../images/camera-loader.gif) no-repeat center;
+  border: 1px solid #FFF;
+  border-radius: 18px;
+  height: 39px;
+  left: 50%;
+  overflow: hidden;
+  position: absolute;
+  margin: -18px 0 0 -18px;
+  top: 50%;
+  width: 64px;
+  z-index: 3;
+}
+
+.camera_nav_cont {
+  height: 65px;
+  overflow: hidden;
+  position: absolute;
+  right: 9px;
+  top: 15px;
+  width: 120px;
+  z-index: 4;
+}
+
+.camerarelative {
+  overflow: hidden;
+  position: relative;
+}
+
+.imgFake {
+  cursor: pointer;
+}
+
+.camera_command_wrap .hideNav {
+  display: none;
+}
+
+.camera_command_wrap {
+  left: 0;
+  position: relative;
+  right: 0;
+  z-index: 4;
+}
+
+.showIt {
+  display: none;
+}
+
+.camera_clear {
+  clear: both;
+  display: block;
+  height: 1px;
+  margin: -1px 0 25px;
+  position: relative;
+}
+
+.camera_caption {
+  display: none;
+}
+
+.cameraContent .camera_caption {
+  display: block;
+}
+
+/*================   Custom Layout&Styles   =====================*/
+.camera_caption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  right: 0;
+  color: #FFF;
+  @include transform(translateY(-46%));
+  > div {
+    height: 100%;
+  }
+  p {
+    font: 300 20px/30px $default-font;
+    padding: 0 70px;
+  }
+}
+
+.camera_pag {
+  &_ul {
+    text-align: center;
+
+    li {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      line-height: 8px;
+      text-align: center;
+      cursor: pointer;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background: #888;
+      @include transition(.3s all ease);
+
+      &.cameracurrent, &:hover {
+        background: #333;
+      }
+
+      & + li {
+        margin-left: 4px;
+      }
+
+      > span {
+        display: none;
+      }
+    }
+  }
+}
+
+.camera_next {
+  right: 251px;
+  &:before {
+    content: '\f101';
+  }
+}
+
+.camera_prev {
+  left: 251px;
+  &:before {
+    content: '\f100';
+  }
+}
+
+.camera_next, .camera_prev {
+  position: absolute;
+  cursor: pointer;
+  font-family: $fa;
+  font-size: 32px;
+  line-height: 32px;
+  color: map-get($scheme, default);
+  top: 50%;
+  margin-top: -45px;
+  @include transition(.3s);
+  z-index: 5;
+  &:hover {
+    color: map-get($scheme, primary);
+  }
+  &:active {
+    color: darken(map-get($scheme, primary), 10%);
+  }
+}
+/*========================================================
+                    Responsive
+=========================================================*/
+
+@media (max-width: 1700px) {
+
+  .camera_next {
+    right: 20px;
+  }
+
+  .camera_prev {
+    left: 20px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .camera_caption p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  .camera_caption p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+

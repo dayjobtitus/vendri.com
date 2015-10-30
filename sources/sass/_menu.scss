@@ -1,0 +1,141 @@
+/*========================   Menu   ==========================*/
+
+//--------------------------------------------------------------
+//                       Menu Styles
+//--------------------------------------------------------------
+.sf-menu {
+  @include clearfix;
+  display: inline-block;
+
+  > li {
+    position: relative;
+    float: left;
+
+    & + li {
+      margin-left: 37px;
+    }
+  }
+
+  a {
+    display: block;
+  }
+}
+
+//--------------------------------------------------------------
+//                     Menu item styles
+//--------------------------------------------------------------
+.sf-menu {
+  > li {
+    > a {
+      font: 400 20px/20px $primary-font;
+      color: lighten(desaturate(adjust_hue(map-get($scheme, secondary), 0.5357142857143344), 4.416848034822696%), 29.411764705882348%);
+    }
+
+    &.sfHover > a, > a:hover, &.active > a {
+      color: map-get($scheme, secondary);
+    }
+  }
+}
+
+//--------------------------------------------------------------
+//                   Sub menu lvl1 styles
+//--------------------------------------------------------------
+.sf-menu ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 152px;
+  margin-top: 14px;
+  padding: 27px 0 16px;
+  background: map-get($scheme, primary);
+  z-index: 2;
+  @include box-sizing(border-box);
+  margin-left: -35px;
+  &:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 50%;
+    margin-left: -6px;
+    border-style: solid;
+    border-width: 6px 5.5px 0 5.5px;
+    border-color: map-get($scheme, default) transparent transparent transparent;
+    z-index: 3;
+  }
+}
+
+//--------------------------------------------------------------
+//                 Sub menu lvl1 item styles
+//--------------------------------------------------------------
+.sf-menu ul {
+  > li {
+    > a {
+      color: map-get($scheme, default);
+      font: 400 17px/18px $primary-font;
+      padding: 9px 10px 9px 23px;
+    }
+
+    &.sfHover > a, > a:hover {
+      color: map-get($scheme, primary);
+      background: map-get($scheme, default);
+    }
+  }
+
+}
+
+//--------------------------------------------------------------
+//                   Sub menu lvl2 styles
+//--------------------------------------------------------------
+.sf-menu ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  margin-top: 36px;
+  margin-left: 3px;
+  left: 100%;
+  width: 152px;
+  padding: 27px 0 16px;
+  background: map-get($scheme, primary);
+  z-index: 4;
+  @include box-sizing(border-box);
+  &:after {
+    display: none;
+  }
+}
+
+//--------------------------------------------------------------
+//                      sf-with-ul styles
+//--------------------------------------------------------------
+.sf-menu > li > .sf-with-ul {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    margin-left: -8px;
+    content: $fa-angle-down;
+    font: 400 16px/16px $fa;
+  }
+}
+
+//--------------------------------------------------------------
+//                        Responsive
+//--------------------------------------------------------------
+@media (max-width: 992px) {
+  .sf-menu > li + li {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sf-menu {
+    display: none;
+  }
+
+  .camera_caption p {
+    padding: 0 40px;
+  }
+}

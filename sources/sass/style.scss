@@ -1,0 +1,1073 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "animate.css";
+// Fonts
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+@import url(//fonts.googleapis.com/css?family=Raleway:400,600);
+@import url(//fonts.googleapis.com/css?family=Roboto:300,300italic,400,600);
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@import url(//fonts.googleapis.com/css?family=Ubuntu);
+
+$scheme: nth($schemes, 1);
+/*========================================================
+                      Main Styles
+=========================================================*/
+body {
+  font: 600 13px/24px $default-font;
+  -webkit-text-size-adjust: none;
+  background: darken(saturate(adjust_hue(map-get($scheme, default), 0), 0%), 3.529411764705884%);
+  color: lighten(desaturate(adjust_hue(map-get($scheme, secondary), 0.5357142857143344), 4.416848034822696%), 29.411764705882348%);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1, h3, h4, h6 {
+  color: map-get($scheme, secondary);
+}
+h1 {
+  font: 600 35px/55px $primary-font;
+
+}
+
+h2 {
+  font: 400 50px/55px $primary-font;
+  color: map-get($scheme, default);
+  &.change {
+    font: 400 60px/60px $primary-font;
+    color: map-get($scheme, primary);
+  }
+}
+
+h3 {
+  font: 400 36px/48px $primary-font;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+h4 {
+  font: 300 26px/26px $default-font;
+}
+
+h5 {
+  font: 400 20px/24px $primary-font;
+}
+
+h6 {
+  font: 600 17px/20px $default-font;
+}
+
+h4, h5, h6 {
+  a {
+    &:hover {
+      color: map-get($scheme, primary);
+    }
+    &:active {
+      color: darken(map-get($scheme, primary), 10%);
+    }
+  }
+}
+
+p, .marked-list, .list {
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .fa {
+    text-decoration: none;
+  }
+}
+
+time {
+  display: block;
+}
+
+a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background-color: transparent;
+  }
+
+  @include transition(.3s);
+}
+
+a[href^="tel:"],
+a[href^="callto:"] {
+  color: inherit;
+  text-decoration: none;
+}
+
+a[href^="callto:"],
+a[href^="mailto:"] {
+  &:hover {
+    color: map-get($scheme, primary);
+  }
+  &:active {
+    color: darken(map-get($scheme, primary), 10%);
+  }
+}
+
+blockquote {
+
+  q {
+    display: inline-block;
+    font: 600 17px/29px $default-font;
+    font-style: italic;
+    padding: 36px 47px 76px;
+    border: solid 1px map-get($scheme, primary);
+  }
+  .blockq_img {
+    margin-top: -50px;
+    img {
+      @include border-radius(50%);
+    }
+  }
+  cite {
+    margin-top: 19px;
+    display: block;
+    font: 300 26px/26px $default-font;
+    color: map-get($scheme, secondary);
+    span {
+      margin-top: 8px;
+      display: inherit;
+      font: 400 17px/17px $default-font;
+      color: map-get($scheme, primary);
+    }
+  }
+}
+
+strong {
+  font-weight: 700;
+}
+
+.fa {
+  line-height: inherit;
+}
+
+[class*='fa-'] {
+  &:before {
+    font-weight: 400;
+    font-family: $fa;
+  }
+}
+
+.page {
+  overflow: hidden;
+  min-height: 500px;
+
+  .lt-ie9 & {
+    min-width: 1200px;
+  }
+}
+
+/*=======================================================
+                       Main Layout
+=========================================================*/
+h2 + p, h5 + p, .row-off, p + .btn-1__md, h5 + .marked-list {
+  margin-top: 15px;
+}
+
+h2 + .event-style, .row-off-3 {
+  margin-top: 7px;
+}
+
+.row-off-1, time + h5 {
+  margin-top: 10px;
+}
+h5 + p.lh {
+  margin-top: 12px;
+}
+
+h4 + p, p + p, h5 + .widget-wr, * + .privacy-wr, .row-off-2, .col-off {
+  margin-top: 20px;
+}
+
+p + .font-primary, img + h4, .off, h3 + .mailform, * + .mail {
+  margin-top: 38px;
+}
+
+* + .btn-off, p.lh + h5 {
+  margin-top: 46px;
+}
+
+article + article, p + .btn-off-1, h3 + p, p + p.lh, h3 + h5 {
+  margin-top: 30px;
+}
+
+.row-off-4 {
+  margin-top: 0;
+}
+
+* + .font-primary-3 {
+  margin-top: -7px;
+}
+
+.col-off-1 {
+  margin-top: 60px;
+}
+/*=======================================================
+                        Components
+=========================================================*/
+
+/*==================     Brand     ======================*/
+.brand {
+  display: inline-block;
+  &_name {
+    a {
+      position: relative;
+      padding-left: 84px;
+      &:before {
+        position: absolute;
+        content: '\f0eb';
+        color: map-get($scheme, default);
+        font-size: 35px;
+        line-height: 73px;
+        font-family: $fa;
+        width: 73px;
+        height: 73px;
+        background: map-get($scheme, primary);
+        @include border-radius(50%);
+        text-align: center;
+        top: -20px;
+        left: 0;
+      }
+    }
+  }
+
+  &_slogan {
+  }
+}
+
+/*==================  Backgrounds  ======================*/
+.bg-primary {
+  background: map-get($scheme, primary);
+  color: map-get($scheme, default);
+}
+
+.bg-default {
+  background: map-get($scheme, default);
+}
+
+/*==================   Colors    ======================*/
+.secondary {
+  color: map-get($scheme, secondary);
+}
+/*==================     Icons     ======================*/
+.fa-facebook,
+.fa-twitter,
+.fa-google-plus,
+.fa-linkedin {
+}
+
+/*==================    Buttons    ======================*/
+.btn {
+  display: inline-block;
+  font: 400 20px/20px $primary-font;
+  padding: 23px 36px;
+  background: map-get($scheme, primary);
+  color: map-get($scheme, default);
+  &:hover {
+    color: map-get($scheme, secondary);
+    background: map-get($scheme, default);
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.btn-1 {
+  display: inline-block;
+  position: relative;
+  padding: 23px 25px 20px;
+  font: 400 20px/20px $primary-font;
+  color: map-get($scheme, default);
+  border: solid 2px lighten(desaturate(adjust_hue(map-get($scheme, secondary), 3.1730769230769056), 5.022831050228307%), 28.431372549019606%);
+  z-index: 0;
+  &:before {
+    position: absolute;
+    content: '';
+    top: -1px;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    @include transition(.3s);
+    background: lighten(desaturate(adjust_hue(map-get($scheme, secondary), 3.1730769230769056), 5.022831050228307%), 28.431372549019606%);
+    opacity: 0;
+    z-index: -1;
+  }
+  &:hover {
+    &:before {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.btn-1__md {
+  color: map-get($scheme, primary);
+  border-color: map-get($scheme, primary);
+  border-width: 1px;
+  padding: 15px 32px;
+  &:before {
+    background: map-get($scheme, primary);
+  }
+  &:hover {
+    color: map-get($scheme, default);
+  }
+}
+
+/*==================      Box      ======================*/
+.box {
+  @include clearfix();
+
+  &_aside {
+    float: left;
+  }
+
+  &_cnt {
+  }
+
+  &_cnt__no-flow {
+    overflow: hidden;
+  }
+}
+
+/*==================    Center    ======================*/
+.center {
+  text-align: center;
+}
+/*================== Line Height ======================*/
+.lh {
+  line-height: 29px;
+}
+//==================    Imports    ======================
+@import "_menu.scss";
+@import "_navbar.scss";
+@import "_stuck-menu.scss";
+@import "_to-top.scss";
+@import "_parallax.scss";
+
+/*========================================================
+                     HEADER  Section
+=========================================================*/
+header {
+  background: map-get($scheme, default);
+  padding: 34px 0 13px;
+  .brand {
+    float: left;
+  }
+
+  .nav {
+    float: right;
+    padding: 22px 0;
+  }
+
+  @media (max-width: 767px) {
+    text-align: center;
+
+    .brand, .nav {
+      float: none;
+    }
+  }
+}
+
+/*========================================================
+                     CONTENT  Section
+=========================================================*/
+main {
+  display: block;
+}
+
+/*==================      Well     ======================*/
+.well {
+  padding: 135px 0 149px;
+}
+
+.well-1 {
+  padding: 102px 0 100px;
+  &__off {
+    padding-top: 96px;
+  }
+  &__off-1 {
+    padding-bottom: 112px;
+  }
+  &__off-2 {
+    padding-bottom: 0;
+  }
+  &__off-3 {
+    padding-top: 126px;
+  }
+  &__off-4 {
+    padding-bottom: 118px;
+  }
+}
+
+.well-2 {
+  padding: 74px 0;
+}
+
+.well-3 {
+  padding: 43px 0 37px;
+}
+
+.well-4 {
+  padding-top: 92px;
+  &__off {
+    padding-top: 100px;
+  }
+}
+
+.well-5 {
+  padding: 68px 0 62px;
+  &__off {
+    padding-bottom: 0;
+  }
+}
+
+.well-6 {
+  padding: 90px 0 108px;
+  &__off {
+    padding-top: 95px;
+  }
+}
+
+.well-7 {
+  padding-bottom: 97px;
+}
+/*==================     Indent     ======================*/
+.indent-1 {
+  padding: 0 40px;
+}
+
+.indent-2 {
+  padding: 0 5px;
+}
+
+.indent-3 {
+  padding-right: 50px;
+}
+/*==================  Event Style  ======================*/
+.event-style {
+  display: inline-block;
+  font: 400 24px/24px $secondary-font;
+  color: map-get($scheme, primary);
+  padding: 15px 20px;
+  border: solid 1px map-get($scheme, primary);
+  text-transform: capitalize;
+}
+
+.event-style__md {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 600;
+  padding: 8px 8px;
+}
+
+/*==================  Font Primary  ======================*/
+.font-primary {
+  font: 300 22px/32px $default-font;
+
+}
+
+.font-primary-2 {
+  color: map-get($scheme, primary);
+  font: 600 48px/48px $default-font;
+  span {
+    font: 300 22px/48px $default-font;
+    color: map-get($scheme, secondary);
+    margin-top: 10px;
+    display: inline-block;
+  }
+}
+
+.font-primary-3 {
+  font-size: 16px;
+  line-height: 30px;
+}
+/*==================  Font Secondary  ======================*/
+.font-secondary {
+  font: 400 30px/40px $primary-font;
+}
+
+/*==================  Image Col  ======================*/
+[class*='img-'] {
+  position: relative;
+  z-index: 0;
+  &:before {
+    position: absolute;
+    content: '';
+    width: 500px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-size: cover;
+  }
+}
+
+.img-left:before {
+  right: 100%;
+}
+
+.img-right:before {
+  right: -75%;
+  margin-right: 3px;
+}
+
+.img-1:before {
+  background: url('../images/page-2_img06.jpg') no-repeat;
+  background-position: -91px;
+}
+
+.img-2:before {
+  background: url('../images/page-2_img07.jpg') no-repeat;
+  background-position: -92px -61px;
+}
+
+.img-3:before {
+  background: url('../images/page-2_img08.jpg') no-repeat;
+  background-position: -130px -51px;
+}
+
+/*==================  Unit Wrap  ======================*/
+.unit-wr {
+  background: rgba(36, 36, 36, .6);
+  padding: 37px 25px 44px 25px;
+  time {
+    color: map-get($scheme, primary);
+  }
+  p {
+    color: lighten(desaturate(adjust_hue(map-get($scheme, secondary), -213.75), 10.958904109589042%), 33.72549019607843%);
+  }
+}
+
+/*==================   Icon Wrap   ======================*/
+.icon-wr {
+  position: relative;
+  padding-left: 55px;
+  &:before {
+    position: absolute;
+    font-size: 32px;
+    line-height: 32px;
+    top: -2px;
+    left: 7px;
+    color: map-get($scheme, primary);
+  }
+}
+
+.icon-wr__md:before {
+  font-size: 42px;
+  line-height: 42px;
+}
+
+/*==================   Radius   ======================*/
+.radius {
+  @include border-radius(50%);
+}
+
+/*==================   Post    ======================*/
+.post {
+  display: block;
+  position: relative;
+  background: rgba(36, 36, 36, .6);
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  &_info {
+    padding: 42px 30px 31px 25px;
+  }
+  &_info__md {
+    padding-top: 32px;
+    padding-bottom: 36px;
+  }
+  &_meta {
+    margin-top: 17px;
+    color: map-get($scheme, primary);
+    p {
+      color: map-get($scheme, primary);
+    }
+
+    p + p, time + p {
+      margin-top: 5px;
+    }
+
+  }
+  &_overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    @include transition(.3s all ease);
+    background: inherit;
+    p {
+      color: lighten(desaturate(adjust_hue(map-get($scheme, secondary), -213.75), 10.958904109589042%), 33.72549019607843%);
+    }
+    &_info {
+      position: absolute;
+      padding: 0 5px;
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      @include transform(translateY(-35%));
+    }
+    &_info__md {
+      @include transform(translateY(-65%));
+    }
+  }
+  &:hover {
+    .post_cnt {
+      opacity: 0;
+    }
+    .post_overlay {
+      opacity: 1;
+    }
+
+  }
+}
+
+.post, .unit-wr {
+  [class*='fa-']:before {
+    padding-right: 5px;
+  }
+}
+
+/*==================   Contact    ======================*/
+.contact {
+  position: relative;
+  padding-left: 86px;
+  margin-left: 26px;
+  p:first-child {
+    color: map-get($scheme, secondary);
+    font: 400 20px/24px $primary-font;
+    + p, + span {
+      margin-top: 2px;
+    }
+  }
+  span {
+    display: inline-block;
+  }
+  &:before {
+    position: absolute;
+    top: -16px;
+    left: 0;
+    color: map-get($scheme, default);
+    width: 73px;
+    height: 73px;
+    background: map-get($scheme, primary);
+    text-align: center;
+    font-size: 35px;
+    line-height: 73px;
+    @include border-radius(50%);
+  }
+  &.fa-envelope:before {
+    font-size: 25px;
+  }
+}
+
+/*==================  Marked List  ======================*/
+[class*='marked-list'] {
+  li {
+    position: relative;
+    &:before {
+      position: absolute;
+      left: 0;
+      font-weight: 400;
+      font-family: $fa;
+      color: map-get($scheme, primary);
+    }
+  }
+}
+.marked-list {
+  li {
+    padding-left: 18px;
+
+    &:before {
+      content: '\f0a9';
+      top: 0;
+      font-size: 12px;
+    }
+
+    & + li {
+      margin-top: 5px;
+    }
+  }
+
+  a:hover {
+    color: map-get($scheme, primary);
+    text-decoration: none;
+  }
+}
+
+.marked-list-1 {
+  li {
+    padding-left: 46px;
+    padding-right: 50px;
+    &:before {
+      content: '\f046';
+      top: 4px;
+      font-size: 32px;
+    }
+
+    & + li {
+      margin-top: 43px;
+    }
+  }
+
+}
+/*==================   Index List  ======================*/
+.index-list {
+  counter-reset: li;
+  margin-left: 0;
+  li {
+    position: relative;
+    .cnt {
+      padding-left: 87px;
+    }
+
+    &:before {
+      position: absolute;
+      content: counter(li, decimal) '.';
+      counter-increment: li;
+      color: map-get($scheme, primary);
+      font-size: 30px;
+      line-height: 78px;
+      font-family: $primary-font;
+      top: 5px;
+      left: 34px;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 78px;
+      height: 78px;
+      border: 2px solid map-get($scheme, primary);
+      @include border-radius(50%);
+      top: 4px;
+      left: 0;
+    }
+    &:nth-child(n+3):nth-child(-n+6) {
+      margin-top: 40px;
+    }
+  }
+
+  li.grid_1:nth-child(12n + 13),
+  li.grid_2:nth-child(6n + 7),
+  li.grid_3:nth-child(4n + 5),
+  li.grid_4:nth-child(3n + 4),
+  li.grid_6:nth-child(2n + 3) {
+    clear: left;
+  }
+}
+/*==================   Progress  ======================*/
+.progress {
+  position: relative;
+  z-index: 0;
+  padding: 177px 0;
+  &:before {
+    position: absolute;
+    content: '';
+    background: url('../images/page-3_img05.png') no-repeat;
+    width: 431px;
+    height: 432px;
+    top: 8px;
+    left: 50%;
+    margin-left: -216px;
+    text-align: center;
+    z-index: -1;
+  }
+}
+/*==================   Border  ======================*/
+.border {
+  border-right: solid 1px map-get($scheme, primary);
+
+}
+/*==================    Mail   ======================*/
+.mail {
+  display: inline-block;
+  font: 400 20px/20px $default-font;
+  color: map-get($scheme, primary);
+  &[href^="mailto:"]:hover  {
+    text-decoration: none;
+    color: map-get($scheme, secondary);
+  }
+  &[href^="mailto:"]:active {
+    text-decoration: underline;
+  }
+}
+/*========================================================
+                     FOOTER  Styles
+=========================================================*/
+footer {
+  .widget-cnt {
+    padding: 56px 0 66px;
+  }
+  .footer-wr {
+    @include clearfix;
+    padding: 28px 0 22px;
+    .social-link-wr {
+      float: right;
+    }
+    .privacy-wr {
+      float: left;
+    }
+  }
+}
+
+/*==================   InstafFeed    ======================*/
+#instafeed {
+  @include clearfix;
+  margin: 0 -3px;
+  a {
+    max-width: 33.333%;
+    float: left;
+    display: block;
+    @include box-sizing(border-box);
+    padding: 0 5px;
+    &:nth-child(n+4):nth-child(-n+6) {
+      margin-top: 11px;
+    }
+    &:nth-child(4) {
+      clear: left;
+    }
+  }
+}
+
+/*==================   Social Link   ======================*/
+.social-link {
+  > li {
+    display: inline-block;
+    a {
+      text-align: center;
+      display: inline-block;
+      font-size: 18px;
+      line-height: 48px;
+      width: 48px;
+      height: 48px;
+      background: map-get($scheme, primary);
+      color: map-get($scheme, default);
+      @include border-radius(50%);
+      @include transition(.3s);
+      &:hover {
+        background: map-get($scheme, default);
+        color: map-get($scheme, primary);
+        border: solid 1px map-get($scheme, primary);
+      }
+      &:active {
+        background: rgba(map-get($scheme, primary), 0.1);
+      }
+    }
+    a + a {
+      margin-left: 5px;
+    }
+  }
+}
+
+/*==================   Privacy   ======================*/
+.privacy-wr {
+  p {
+    font: 400 14px/14px $secondary-1-font;
+    color: map-get($scheme, secondary);
+    a {
+      &:hover {
+        color: map-get($scheme, primary);
+        text-decoration: none;
+      }
+      &:active {
+        color: darken(map-get($scheme, primary), 10%);
+      }
+    }
+  }
+}
+
+/*========================================================
+                     RESPONSIVE
+=========================================================*/
+@media (max-width: 1199px) {
+  h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  [class*="img-"]:before {
+    width: 405px;
+    background-position: center;
+  }
+
+  .img-right:before {
+    right: -75%;
+    margin-right: 6px;
+  }
+
+  .well-4__off {
+    padding-bottom: 50px;
+  }
+  .indent-3 {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  h2 + p {
+    margin-top: 10px;
+  }
+  * + .btn-off {
+    margin-top: 20px;
+  }
+
+  .btn {
+    padding: 16px 29px;
+  }
+
+  .indent-1 {
+    padding: 0;
+  }
+  .event-style__md {
+    font-size: 15px;
+    line-height: 16px;
+  }
+  .post_info {
+    padding: 20px 20px 25px 20px;
+  }
+  .post_info__md {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  .contact:before {
+    top: -5px;
+  }
+  .font-primary {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .unit-wr {
+    margin-top: 330px;
+  }
+  .col-sm-6:nth-child(2n-1) {
+    clear: both;
+  }
+  [class*="img-"]::before {
+    width: 100%;
+  }
+  .img-left:before, .img-right:before {
+    right: 0;
+    left: 0;
+    top: -100%;
+  }
+  .marked-list-1 li {
+    padding-right: 0;
+  }
+  .border {
+border: none;
+  }
+}
+
+@media (max-width: 767px) {
+  [class*='well'] {
+    padding: 50px 0;
+  }
+  .well-4 {
+    padding-bottom: 0;
+  }
+  .well-4__off {
+    padding-bottom: 50px;
+  }
+  header {
+    padding: 35px 0;
+    .nav {
+      padding: 0;
+    }
+  }
+  .row-off-4 {
+    margin-top: 30px;
+  }
+
+
+  .contact {
+    margin-left: 0;
+  }
+
+  .unit-wr {
+    margin-top: 353px;
+  }
+
+}
+
+@media (max-width: 479px) {
+  h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .event-style {
+    font-size: 17px;
+    line-height: 17px;
+  }
+  footer .footer-wr {
+    .social-link-wr, .privacy-wr {
+      float: none;
+      text-align: center;
+    }
+
+  }
+  .col-off-1 {
+    margin-top: 20px;
+  }
+  .unit-wr {
+    margin-top: 383px;
+  }
+  .img-left:before, .img-right:before {
+    top: -92%;
+  }
+  .img-1:before, .img-3:before {
+    background-position: -120px;
+  }
+  .progress {
+
+    padding: 41% 0px 47%;
+    &:before {
+
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin-left: 0;
+      background-size: 100% auto;
+      text-align: center;
+      z-index: -1;
+    }
+  }
+  .font-secondary {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.v {
+  height: 100px;
+  background: #000;
+}

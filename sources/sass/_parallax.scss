@@ -1,0 +1,36 @@
+/*==================  RD Parallax    ======================*/
+.parallax {
+  position: relative;
+  overflow: hidden;
+  h3, h5 {
+    color: map-get($scheme, default);
+  }
+  
+  p.default-font {
+    color: lighten(desaturate(adjust_hue(map-get($scheme, secondary), 1.2500000000000568), 4.507291206363244%), 34.90196078431372%);
+  }
+
+  &_image, &_pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-position: center center;
+    will-change: transform;
+  }
+
+  &_image {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  &_pattern {
+    background-repeat: repeat;
+  }
+
+  &_cnt {
+    position: relative;
+  }
+}

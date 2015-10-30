@@ -1,0 +1,148 @@
+/* Mail Form Validation
+  ========================================================*/
+
+.mfValidation {
+  @include transform-origin(0% 50%);
+  @include transition(.3s all ease);
+  @include border-radius(5px);
+  position: absolute;
+  top: 0;
+  left: 40%;
+  width: 210px;
+  margin-top: -48px;
+  margin-left: 11px;
+  padding: 10px;
+  height: 40px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  background: #111;
+  color: map-get($scheme, default);
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  z-index: 998;
+
+  &:hover {
+    background: map-get($scheme, primary);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 5%;
+    margin-bottom: -7px;
+    bottom: 0;
+    @include transform(translateY(-50%));
+    @include triangle(bottom, 8px, 5px, #111);
+    @include transition(0.3s all ease);
+  }
+  &:hover {
+    &:before {
+      @include triangle(bottom, 8px, 5px, map-get($scheme, primary));
+    }
+  }
+
+  &.show {
+    @include transform(scale(1));
+    opacity: 1;
+    visibility: visible;
+    @include animation(notifanim .4s cubic-bezier(.55, 0, .1, 1) forwards);
+  }
+
+  &.hide{
+    @include animation(notifanim-fo .4s cubic-bezier(.55, 0, .1, 1) forwards);
+  }
+  
+  &.valid{
+    opacity: 0;
+    visibility: hidden;
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    left: 25%;
+  }
+  @media (max-width: 991px) {
+    left: 5%;
+  }
+  @media (max-width: 767px) {
+    text-align: right;
+    top: 0;
+    left: auto;
+    bottom: 100%;
+    right: 0;
+    background: none;
+    padding: 0;
+    margin: -20px 6px 3px;
+    min-height: 0;
+    color: map-get($scheme, primary);
+
+    &:before {
+      display: none;
+    }
+
+    &:hover{
+      background: none;
+      right: 5px;
+    }
+  }
+}
+.textarea .mfValidation {
+  left: 81%;
+  @media (min-width: 992px) and (max-width: 1199px) {
+    left: 76.5%;
+  }
+  @media (max-width: 991px) {
+    left: 69%;
+  }
+  @media (max-width: 767px) {
+    left: auto;
+  }
+}
+
+@include keyframes(notifanim-fo) {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  20% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  99% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: hidden;
+    transform: scale(.3);
+    opacity: 0;
+  }
+}
+
+@include keyframes(notifanim) {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(.3);
+  }
+
+  1% {
+    visibility: visible;
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(.9);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
