@@ -633,7 +633,7 @@ article + article, p + .btn-off-1, h3 + p, p + p.lh, h3 + h5 {
                      HEADER  Section
 =========================================================*/
 header {
-  background: images/vendribanner.png;
+  background: images/Vendribanner.png;
   padding: 34px 0 13px; }
   header .brand {
     float: left; }
