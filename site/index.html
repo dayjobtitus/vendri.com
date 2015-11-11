@@ -26,27 +26,31 @@
 
     <!--facebook widget-->
     <script>(function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
+        var js, fjs = d.getElementsByTagName( s )[ 0 ];
+        if (d.getElementById( id )) {
+            return;
+        }
+        js     = d.createElement( s );
+        js.id  = id;
         js.src = "//connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v2.4";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+        fjs.parentNode.insertBefore( js, fjs );
+    }( document, 'script', 'facebook-jssdk' ));</script>
 
     <!--twitter widget-->
-    <script>!function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-        if (!d.getElementById(id)) {
-            js = d.createElement(s);
-            js.id = id;
+    <script>! function (d, s, id) {
+        var js, fjs = d.getElementsByTagName( s )[ 0 ], p = /^http:/.test( d.location ) ? 'http' : 'https';
+        if (! d.getElementById( id )) {
+            js     = d.createElement( s );
+            js.id  = id;
             js.src = p + "://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js, fjs);
+            fjs.parentNode.insertBefore( js, fjs );
         }
-    }(document, "script", "twitter-wjs");</script>
+    }( document, "script", "twitter-wjs" );</script>
 
 
     <script src='js/device.min.js'></script>
+    <script src='http://vendri.com/test/js/vendri_qa.min.js?PID=001'></script>
+    <!--<script src='http://localhost:63342/Vendri_core/dist/core_dev.js?PID=001'></script>-->
 </head>
 <body>
 <div class="page">
@@ -58,7 +62,7 @@
             <div class="container">
                 <div class="brand">
                     <h1 class="brand_name">
-                        <a href="/images/Vendribanner.png">Vendri</a>
+                        <a href="#"><img src="images/vendri-logo-main.png"></a>
                     </h1>
 
                 </div>
@@ -69,14 +73,14 @@
                             <a href="./">Home</a>
                         </li>
                         <li>
-                            <a href="index-1.html">About</a>
+                            <a href="about.html">About</a>
 
                         </li>
                         <li>
 
-                            <a href="index-3.html">News</a>
+                            <a href="news.html">News</a>
                         </li>
-                        
+
                     </ul>
                 </nav>
             </div>
@@ -92,35 +96,31 @@
                 <div data-src="images/page-1_slide01.jpg">
                     <div class="camera_caption fadeIn">
                         <div class="container">
-                            <h2>Using the same internet to do more is what we do!</h2>
+                            <h2>Nobody wants to wait for content to load</h2>
 
-                            <p>Vendri is making spinners a thing of the past, by speeding up content display on the
-                            internet for everyone. Vendri's Actionable Data Platform provides web and app publishers with
-                            modern tools for instant contextual display of media from any source on any screen.</p>
-                            <a href="#" class="btn btn-off">Sign Up</a>
+                            <p>We are making spinners a thing of the past, by speeding up content display on the internet for everyone. Vendri's Actionable Data Platform provides web and app publishers with modern tools for instant contextual display
+                                of media from any source on any screen.</p>
+                            <a href="#" class="btn btn-off">Start Now</a>
                         </div>
                     </div>
                 </div>
                 <div data-src="images/page-1_slide02.jpg">
                     <div class="camera_caption fadeIn">
                         <div class="container">
-                            <h2>Save your time and money with us!</h2>
+                            <h2>Publishers, save your time and money with us!</h2>
 
-                            <p>Vendri is a no-code solution, meaning  publishers can start making and managing custom
-                            creatives and campaigns immediately, without having to loop in engineers</p>
-                            <a href="#" class="btn btn-off">Sign Up</a>
+                            <p>Vendri's platform is a no-code solution, meaning publishers can start making and managing custom creatives and campaigns immediately, without having to loop in engineers.</p>
+                            <a href="#" class="btn btn-off">Start Now</a>
                         </div>
                     </div>
                 </div>
                 <div data-src="images/page-1_slide03.jpg">
                     <div class="camera_caption fadeIn">
                         <div class="container">
-                            <h2>Great expertise based on experience!</h2>
+                            <h2>The days of servers rendering content are over!</h2>
 
-                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
-                               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                               exercitation ullamco.</p>
-                            <a href="#" class="btn btn-off">Sign Up</a>
+                            <p>Powered by new hyper-threaded technology that runs on every device, Vendri ensures no slow cloud processing, no pre-caching, and no wasted bandwidth.</p>
+                            <a href="#" class="btn btn-off">Start Now</a>
                         </div>
                     </div>
                 </div>
@@ -133,29 +133,22 @@
                         <img src="images/page-1_img01.png" alt=""/>
                     </div>
                     <div class="col-md-6 wow fadeInRight" data-wow-delay="0.4s">
-                        <h2 class="change">Welcome!</h2>
+                        <h2 class="change">Get Started Immediately!</h2>
 
-                        <p class="event-style">Let Us Help You speed up the Internet</p>
-
-                        <p class="font-primary">Vendri is making spinners a thing of the past!</p>
-
-                        <div class="row row-off">
-                            <div class="col-sm-6">
-                                <h6>
-                                    <a href='#'>What We Do</a>
-                                </h6>
-                                <p>We provide web and app publishers with modern tools for
-                                instant contextual display of media from any source on any screen</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <h6>
-                                    <a href='#'>Who We Are</a>
-                                </h6>
-                                <p>Vendri is a no code Actionable Data Platform, that is enhancing the end-users experience.
-                                We give Publishers the ability to take action and make changes based on the daily data they receive.</p>
-                            </div>
-                        </div>
+                        <p class="event-style">and let us help you speed up the internet</p>
                     </div>
+
+                    <div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+                        <h6>What We Do</h6>
+
+                        <p>We provide web and app publishers with modern tools for instant contextual display of media from any source on any screen.</p>
+                        <br>
+                        <h6>Who We Are</h6>
+
+                        <p>Vendri is a no-code-required Actionable Data Platform for anyone who uses the internet to display some form of content on any platform. Make custom creatives and campaigns with media and ads of any type without worrying
+                            about how to display them, and control everything from brand protection, to monetization, to user experience.</p>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -165,61 +158,79 @@
 
                 <div class="row">
                     <div class="col-sm-4 wow fadeInLeft" data-wow-delay="0.2s">
-                        <div class="icon-wr fa fa-th">
+                        <div class="icon-wr fa fa-cogs">
                             <h5>
-                               Hyper-threaded technology
+                                Publisher Control
                             </h5>
-                            <p class="default-font">The Vendri engine runs on any device, any platform and
-                            and any network.</p>
+
+                            <p class="default-font">Stop loading tons of SDK's and paying for many services and still having to engineer how they all work together. One platform, all content, all ads, all partners, for all of your apps and websites.
+                            </p>
                         </div>
                     </div>
                     <div class="col-sm-4 wow fadeInLeft" data-wow-delay="0.4s">
                         <div class=" icon-wr fa fa-edit">
                             <h5>
-                               No Cloud, No Problem
+                                Easy Integration
                             </h5>
-                            <p class="default-font">Vendri ensures no slow cloud processing, no pre-caching and no wasted bandwidth</p>
+
+                            <p class="default-font">Integrating Vendri all the way to production, done in minutes.</p>
                         </div>
                     </div>
                     <div class="col-sm-4 wow fadeInLeft" data-wow-delay="0.6s">
-                        <div class="icon-wr fa fa-laptop">
+                        <div class="icon-wr fa fa-server">
                             <h5>
-                                Easy Integration
+                                No Server Reliance
                             </h5>
-                            <p class="default-font">Integrating vendri is as simple as adding one string of text to the
-                            website(s) and downloading a mobile SDK for each targeted app. The average integration time for
-                            most of Vendri's clients is less than one hour.</p>
+
+                            <p class="default-font">Vendri ensures no slow cloud processing, no pre-caching, and no wasted bandwidth.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row row-off">
                     <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.2s">
-                        <div class="icon-wr icon-wr__md fa fa-mobile">
+                        <div class="icon-wr fa fa-users">
                             <h5>
                                 Enhanced Experience
                             </h5>
-                            <p class="default-font">No More Spinner: Vendri allos media to be delivered to users
-                            faster and more reliably; creating a better experience for audiences. </p>
+
+                            <p class="default-font">No More Spinner: Vendri makes decisions on content and automates pulling from the correct sources and will not pre-cache or download anything unless it can be displayed.</p>
                         </div>
                     </div>
                     <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.4s">
-                        <div class="icon-wr fa fa-cogs">
+                        <div class="icon-wr fa fa-bolt">
                             <h5>
-                                For the Publisher
+                                Hyper-threaded technology
                             </h5>
-                            <p class="default-font">Nobody wants to wait for content to load. for publishers content performance
-                            issues costs you everything. From visitors, users and ultimately revenue. Vendri is tackling this problem
-                            </p>
+
+                            <p class="default-font">Using the power of every connected device, do more with the same internet.</p>
                         </div>
                     </div>
                     <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.6s">
-                        <div class="icon-wr fa fa-male">
+                        <div class="icon-wr fa fa-eye">
                             <h5>
-                                Actionable Data
+                                Live Actionable Data
                             </h5>
-                            <p class="default-font">Vendri shows you which Content needs better completion rates,
-                            tells you how to improve it and shows you how that change affects the entire ecosystem
-                            of creatives</p>
+
+                            <p class="default-font">Beyond simply providing correlated data from all sources, Vendri enables publishers to take action on that data, prompting them to make better decisions about their content, in real time.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="icon-wr fa fa-play">
+                            <h5>
+                                No Video/Audio Player Needed
+                            </h5>
+
+                            <p class="default-font">With full automatic support for all asset types, no need to limit or add anything else. Use your player or let Vendri create one whenever it is needed.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="icon-wr fa fa-plus">
+                            <h5>
+                                Even Ads
+                            </h5>
+
+                            <p class="default-font">Removing the barrier between ads and content, Vendri supports all ads from any partner you chose. We even guarantee viewability and provide you the control over campaigning, bidding, and
+                                fallbacks.</p>
                         </div>
                     </div>
                 </div>
@@ -228,15 +239,14 @@
         </section>
         <section class="bg-primary center well-2">
             <div class="container wow fadeIn">
-                <h2>Strong. Stable. Reliable.</h2>
+                <h2>Speed-up. Control. Monetize.</h2>
 
-                <p class="font-primary indent-1">Load-time of our publishers' sites/apps increase >50% for
-                bandwidth usage across all users reduced by 1TB per month and even greater savings for all the CDN's
-                content hosting platforms that would otherwise spend bandwidth</p>
+                <p class="font-primary indent-1">With over 10x improvement on performance across all customer platforms today, our publishers are now able to apply more contextual controls around their content and even monetize in new ways.
+                    Supporting all media types and ad technologies such as VAST and VPAID, there are no restrictions.</p>
             </div>
         </section>
         <section class="well-1 well-1__off">
-            <div class="container">
+            <div id="team" class="container">
                 <h3>Meet Our Team</h3>
 
                 <div class="row row-off-1">
@@ -245,50 +255,55 @@
                         <h4>
                             <a href='#'>Jeremy Titus</a>
                         </h4>
+
                         <p class="event-style event-style__md">Founder | CEOr</p>
 
                         <p>Praesent vestibulum molestie lacus
-                           aenean nonummy hendrerit mauris phasel
-                           Fusce suscipit varius mi. </p>
+                            aenean nonummy hendrerit mauris phasel
+                            Fusce suscipit varius mi. </p>
                     </div>
                     <div class="col-sm-3 center wow fadeInUp" data-wow-delay="0.4s">
                         <img src="images/page-1_img03.jpg" class="radius" alt=""/>
                         <h4>
                             <a href='#'>Josh Brown</a>
                         </h4>
+
                         <p class="event-style event-style__md">Software Engineer</p>
 
                         <p>Praesent vestibulum molestie lacus
-                           aenean nonummy hendrerit mauris phasel
-                           Fusce suscipit varius mi. </p>
+                            aenean nonummy hendrerit mauris phasel
+                            Fusce suscipit varius mi. </p>
                     </div>
                     <div class="col-sm-3 center wow fadeInUp" data-wow-delay="0.6s">
                         <img src="images/page-1_img04.jpg" class="radius" alt=""/>
                         <h4>
                             <a href='#'>Lucas Huey</a>
                         </h4>
+
                         <p class="event-style event-style__md">Marketing | Creative</p>
 
                         <p>Praesent vestibulum molestie lacus
-                           aenean nonummy hendrerit mauris phasel
-                           Fusce suscipit varius mi. </p>
+                            aenean nonummy hendrerit mauris phasel
+                            Fusce suscipit varius mi. </p>
                     </div>
                     <div class="col-sm-3 center wow fadeInUp" data-wow-delay="0.8s">
                         <img src="images/page-1_img05.jpg" class="radius" alt=""/>
                         <h4>
                             <a href='#'>Kay Vierra</a>
                         </h4>
+
                         <p class="event-style event-style__md">Executive Assistant</p>
 
                         <p>Praesent vestibulum molestie lacus
-                           aenean nonummy hendrerit mauris phasel
-                           Fusce suscipit varius mi. </p>
+                            aenean nonummy hendrerit mauris phasel
+                            Fusce suscipit varius mi. </p>
                     </div>
                     <div class="col-sm-3 center wow fadeInUp" data-wow-delay="0.8s">
                         <img src="images/page-1_img05.jpg" class="radius" alt=""/>
                         <h4>
                             <a href='#'>Elgin</a>
                         </h4>
+
                         <p class="event-style event-style__md">Sales</p>
 
                         <p>Praesent vestibulum molestie lacus
@@ -300,6 +315,7 @@
                         <h4>
                             <a href='#'>Christine</a>
                         </h4>
+
                         <p class="event-style event-style__md">Sales</p>
 
                         <p>Praesent vestibulum molestie lacus
@@ -309,9 +325,8 @@
                 </div>
             </div>
         </section>
-        <section class="parallax well-1 well-1__off-1" data-url="images/parallax2.jpg" data-mobile="true"
-                 data-speed="1">
-            <div class="container">
+        <section class="parallax well-1 well-1__off-1" data-url="images/parallax2.jpg" data-mobile="true" data-speed="1">
+            <div id="news" class="container">
                 <h3>News Posts</h3>
 
                 <div class="row row-off-1">
@@ -324,11 +339,12 @@
                                     <h5>
                                         <a href='#'>Excepteur sint occaecaton</a>
                                     </h5>
+
                                     <p class="default-font">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit
-                                                            mauris. Phasellus
-                                                            porta. Fusce suscipit varius mi. Cum sociis natoque
-                                                            penatibus et magnis dis
-                                                            parturient montes.</p>
+                                        mauris. Phasellus
+                                        porta. Fusce suscipit varius mi. Cum sociis natoque
+                                        penatibus et magnis dis
+                                        parturient montes.</p>
 
                                     <div class="post_meta">
                                         <time datetime="2015-08-21" class="fa-clock-o">Aug 21. 2015</time>
@@ -344,7 +360,7 @@
                                     <h5>Excepteur sint occaecaton</h5>
 
                                     <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus
-                                       porta. </p>
+                                        porta. </p>
                                     <a href="#" class="btn-1 btn-1__md">More</a>
                                 </div>
                             </div>
@@ -357,8 +373,9 @@
                                     <h5>
                                         <a href='#'>Excepteur sint occaecaton</a>
                                     </h5>
+
                                     <p class="default-font">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit
-                                                            mauris. Phasellus porta. Fusce suscipit varius mi.</p>
+                                        mauris. Phasellus porta. Fusce suscipit varius mi.</p>
 
                                     <div class="post_meta">
                                         <time datetime="2015-08-21" class="fa-clock-o">Aug 21. 2015</time>
@@ -374,7 +391,7 @@
                                     <h5>Excepteur sint occaecaton</h5>
 
                                     <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus
-                                       porta. </p>
+                                        porta. </p>
                                     <a href="#" class="btn-1 btn-1__md">More</a>
                                 </div>
                             </div>
@@ -388,10 +405,11 @@
                                     <h5>
                                         <a href='#'>Excepteur sint occaecaton</a>
                                     </h5>
+
                                     <p class="default-font">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit
-                                                            mauris. Phasellus porta. Fusce suscipit varius mi. Cum
-                                                            sociis natoque penatibus et magnis dis parturient
-                                                            montes.</p>
+                                        mauris. Phasellus porta. Fusce suscipit varius mi. Cum
+                                        sociis natoque penatibus et magnis dis parturient
+                                        montes.</p>
 
                                     <div class="post_meta">
                                         <time datetime="2015-08-21" class="fa-clock-o">Aug 21. 2015</time>
@@ -407,7 +425,7 @@
                                     <h5>Excepteur sint occaecaton</h5>
 
                                     <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus
-                                       porta. </p>
+                                        porta. </p>
                                     <a href="#" class="btn-1 btn-1__md">More</a>
                                 </div>
                             </div>
@@ -420,10 +438,11 @@
                                     <h5>
                                         <a href='#'>Excepteur sint occaecaton</a>
                                     </h5>
+
                                     <p class="default-font">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit
-                                                            mauris. Phasellus porta. Fusce suscipit varius mi. Cum
-                                                            sociis natoque penatibus et magnis dis parturient
-                                                            montes.</p>
+                                        mauris. Phasellus porta. Fusce suscipit varius mi. Cum
+                                        sociis natoque penatibus et magnis dis parturient
+                                        montes.</p>
 
                                     <div class="post_meta">
                                         <time datetime="2015-08-21" class="fa-clock-o">Aug 21. 2015</time>
@@ -439,7 +458,7 @@
                                     <h5>Excepteur sint occaecaton</h5>
 
                                     <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus
-                                       porta. </p>
+                                        porta. </p>
                                     <a href="#" class="btn-1 btn-1__md">More</a>
                                 </div>
                             </div>
@@ -454,11 +473,12 @@
                                     <h5>
                                         <a href='#'>Excepteur sint occaecaton</a>
                                     </h5>
+
                                     <p class="default-font">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit
-                                                            mauris. Phasellus porta. Fusce suscipit varius mi. Cum
-                                                            sociis natoque penatibus et magnis dis parturient montes
-                                                            nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada
-                                                            odio. </p>
+                                        mauris. Phasellus porta. Fusce suscipit varius mi. Cum
+                                        sociis natoque penatibus et magnis dis parturient montes
+                                        nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada
+                                        odio. </p>
 
                                     <div class="post_meta">
                                         <time datetime="2015-08-21" class="fa-clock-o">Aug 21. 2015</time>
@@ -474,7 +494,7 @@
                                     <h5>Excepteur sint occaecaton</h5>
 
                                     <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus
-                                       porta. </p>
+                                        porta. </p>
                                     <a href="#" class="btn-1 btn-1__md">More</a>
                                 </div>
                             </div>
@@ -484,7 +504,7 @@
             </div>
         </section>
         <section class="well-4">
-            <div class="container">
+            <div id="contact" class="container">
                 <h3>Contact Info</h3>
             </div>
             <div class="bg-default well-3 off">
@@ -534,59 +554,56 @@
                         <h5>About</h5>
                         <ul class="marked-list">
                             <li>
-                                <a href='#'>Staff</a>
+                                <a href='#team'>Staff</a>
                             </li>
                             <li>
-                                <a href='#'>Events</a>
+                                <a href='#news'>News and Events</a>
                             </li>
                             <li>
-                                <a href='#'>Contact</a>
+                                <a href='#contact'>Contact</a>
                             </li>
-                            <li>
-                                <a href='#'>Investor Relations</a>
-                            </li>
-                            <li>
-                                <a href='#'>Partners Log-in</a>
-                            </li>
-                            <li>
-                                <a href='#'>Job Opportunities</a>
-                            </li>
+                            <!--<li>-->
+                            <!--<a href='#login'>Partners Log-in</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                            <!--<a href='#jerbs'>Job Opportunities</a>-->
+                            <!--</li>-->
 
                         </ul>
                     </div>
 
-                    <div class="col-md-3 col-sm-6 wow fadeInRight" data-wow-delay="0.4s">
-                        <h5>International</h5>
-                        <ul class="marked-list">
-                            <li>
-                                <a href='#'>Europe</a>
-                            </li>
-                            <li>
-                                <a href='#'>Australia</a>
-                            </li>
-                            <li>
-                                <a href='#'>Asia</a>
-                            </li>
+                    <!--<div class="col-md-3 col-sm-6 wow fadeInRight" data-wow-delay="0.4s">-->
+                    <!--<h5>International</h5>-->
+                    <!--<ul class="marked-list">-->
+                    <!--<li>-->
+                    <!--<a href='#'>Europe</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href='#'>Australia</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href='#'>Asia</a>-->
+                    <!--</li>-->
 
-                        </ul>
-                    </div>
-                    <div class="col-md-3 col-sm-6 wow fadeInRight" data-wow-delay="0.2s">
-                        <h5>Press And Services</h5>
-                        <ul class="marked-list">
-                            <li>
-                                <a href='#'>Press Info</a>
-                            </li>
-                            <li>
-                                <a href='#'>Designer Files</a>
-                            </li>
-                            <li>
-                                <a href='#'>Technical Support</a>
-                            </li>
-                            <li>
-                                <a href='#'>Sales</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <!--</ul>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 col-sm-6 wow fadeInRight" data-wow-delay="0.2s">-->
+                    <!--<h5>Press And Services</h5>-->
+                    <!--<ul class="marked-list">-->
+                    <!--<li>-->
+                    <!--<a href='#'>Press Info</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href='#'>Design Files</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href='#'>Technical Support</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href='#'>Sales</a>-->
+                    <!--</li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
                 </div>
             </div>
         </section>
@@ -596,47 +613,6 @@
                               FOOTER
     =========================================================-->
     <footer>
-        <div class="widget-cnt bg-default">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h5>Facebook</h5>
-
-                        <div class="widget-wr">
-                            <div class="fb-page" data-href="https://www.facebook.com/Vendriinc" data-height="330"
-                                 data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
-                                 data-show-facepile="true" data-show-posts="true">
-                                <div class="fb-xfbml-parse-ignore">
-                                    <blockquote cite="https://www.facebook.com/Vendriinc">
-
-                                        <a href="https://www.facebook.com/Vendriinc">Vendri</a>
-
-                                        <a href="https://www.facebook.com/Vendriinc">Vendri Inc</a>
-
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h5>Twitter</h5>
-
-                        <div class="widget-wr">
-
-                            <a class="twitter-timeline" href="https://twitter.com/Vendri_Inc"
-                               data-widget-id="633205111376973825">Tweets from @Vendri_Inc
-                            </a>
-                        </div>
-                    </div>
-
-
-                        </div>
-                    </div>
-
-                        </div>
-                    </div>
-
-
         <div class="footer-wr">
             <div class="container">
                 <div class="social-link-wr">
@@ -646,7 +622,7 @@
                         </li>
 
                         <li>
-  <a href='https://twitter.com/Vendri_Inc' class="fa fa-twitter"></a>
+                            <a href='https://twitter.com/Vendri_Inc' class="fa fa-twitter"></a>
                         </li>
                         <li>
                             <a href='https://www.linkedin.com/company/vendri' class="fa fa-linkedin"></a>
