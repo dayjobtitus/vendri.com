@@ -855,10 +855,10 @@ main {
       -o-transform: translateY(-65%);
       -webkit-transform: translateY(-65%);
       transform: translateY(-65%); }
-  .post:hover .post_cnt {
-    opacity: 0; }
-  .post:hover .post_overlay {
-    opacity: 1; }
+  /*.post:hover .post_cnt {  opacity: 0; }*/
+  /*.post:hover .post_overlay {  opacity: 1; }*/
+    .post_overlay:hover {  opacity: 1; background-color: rgb(36, 36, 36); }
+    .post .post_info a{ color: #ccc !important; }
 
 .post [class*='fa-']:before, .unit-wr [class*='fa-']:before {
   padding-right: 5px; }
