@@ -2,14 +2,14 @@
 @import url(animate.css);
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 @import url(//fonts.googleapis.com/css?family=Raleway:400,600);
-@import url(//fonts.googleapis.com/css?family=Roboto:300,300italic,400,600);
+@import url(//fonts.googleapis.com/css?family=Helvetica:300,300italic,400,600);
 @import url(//fonts.googleapis.com/css?family=Open+Sans);
 @import url(//fonts.googleapis.com/css?family=Ubuntu);
 /*========================================================
                       Main Styles
 =========================================================*/
 body {
-  font: 600 13px/24px "Roboto", sans-serif;
+  font: 600 13px/24px "Ubuntu", sans-serif;
   -webkit-text-size-adjust: none;
   background: #f6f6f6;
   color: #8d939b; }
@@ -37,13 +37,13 @@ h3 {
   text-transform: capitalize; }
 
 h4 {
-  font: 300 26px/26px "Roboto", sans-serif; }
+  font: 300 26px/26px "Ubuntu", sans-serif; }
 
 h5 {
   font: 400 20px/24px "Raleway", sans-serif; }
 
 h6 {
-  font: 600 17px/20px "Roboto", sans-serif; }
+  font: 600 17px/20px "Ubuntu", sans-serif; }
 
 h4 a:hover, h5 a:hover, h6 a:hover {
   color: limegreen; }
@@ -85,7 +85,7 @@ a[href^="mailto:"]:active {
 
 blockquote q {
   display: inline-block;
-  font: 600 17px/29px "Roboto", sans-serif;
+  font: 600 17px/29px "Ubuntu", sans-serif;
   font-style: italic;
   padding: 36px 47px 76px;
   border: solid 1px lime; }
@@ -98,12 +98,12 @@ blockquote .blockq_img {
 blockquote cite {
   margin-top: 19px;
   display: block;
-  font: 300 26px/26px "Roboto", sans-serif;
+  font: 300 26px/26px "Ubuntu", sans-serif;
   color: #414851; }
   blockquote cite span {
     margin-top: 8px;
     display: inherit;
-    font: 400 17px/17px "Roboto", sans-serif;
+    font: 400 17px/17px "Ubuntu", sans-serif;
     color: lime; }
 
 strong {
@@ -720,13 +720,13 @@ main {
 
 /*==================  Font Primary  ======================*/
 .font-primary {
-  font: 300 22px/32px "Roboto", sans-serif; }
+  font: 300 22px/32px "Ubuntu", sans-serif; }
 
 .font-primary-2 {
   color: black;
-  font: 600 48px/48px "Roboto", sans-serif; }
+  font: 600 48px/48px "Ubuntu", sans-serif; }
   .font-primary-2 span {
-    font: 300 22px/48px "Roboto", sans-serif;
+    font: 300 22px/48px "Ubuntu", sans-serif;
     color: #414851;
     margin-top: 10px;
     display: inline-block; }
@@ -855,10 +855,10 @@ main {
       -o-transform: translateY(-65%);
       -webkit-transform: translateY(-65%);
       transform: translateY(-65%); }
-  .post:hover .post_cnt {
-    opacity: 0; }
-  .post:hover .post_overlay {
-    opacity: 1; }
+  /*.post:hover .post_cnt {  opacity: 0; }*/
+  /*.post:hover .post_overlay {  opacity: 1; }*/
+    .post_overlay:hover {  opacity: 1; background-color: rgb(36, 36, 36); }
+    .post .post_info a{ color: #ccc !important; }
 
 .post [class*='fa-']:before, .unit-wr [class*='fa-']:before {
   padding-right: 5px; }
@@ -986,7 +986,7 @@ main {
 /*==================    Mail   ======================*/
 .mail {
   display: inline-block;
-  font: 400 20px/20px "Roboto", sans-serif;
+  font: 400 20px/20px "Ubuntu", sans-serif;
   color: black; }
   .mail[href^="mailto:"]:hover {
     text-decoration: none;

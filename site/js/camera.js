@@ -193,9 +193,9 @@
 			);
 	}
 		
-	wrap.append(
-		'<div class="camera_loader"></div>'
-		);
+	//wrap.append(
+	//	'<div class="camera_loader"></div>'
+	//	);
 		
 	$('.camera_caption',wrap).each(function(){
 		$(this).wrapInner('<div />');
@@ -1101,7 +1101,7 @@
 			slide.prepend($(imgLoaded).attr('class','imgLoaded').css('visibility','hidden'));
 			var wT, hT;
 			if (!$(imgLoaded).get(0).complete || wT == '0' || hT == '0' || typeof wT === 'undefined' || wT === false || typeof hT === 'undefined' || hT === false) {
-				$('.camera_loader',wrap).delay(500).fadeIn(400);
+				//$('.camera_loader',wrap).delay(500).fadeIn(400);
 				imgLoaded.onload = function() {
 					wT = imgLoaded.naturalWidth;
 					hT = imgLoaded.naturalHeight;
@@ -1129,14 +1129,14 @@
 				};
 			}
 			opts.onLoaded.call(this);
-			if($('.camera_loader',wrap).is(':visible')){
-				$('.camera_loader',wrap).fadeOut(400);
-			} else {
-				$('.camera_loader',wrap).css({'visibility':'hidden'});
-				$('.camera_loader',wrap).fadeOut(400,function(){
-					$('.camera_loader',wrap).css({'visibility':'visible'});
-				});
-			}
+			//if($('.camera_loader',wrap).is(':visible')){
+			//	$('.camera_loader',wrap).fadeOut(400);
+			//} else {
+			//	$('.camera_loader',wrap).css({'visibility':'hidden'});
+			//	$('.camera_loader',wrap).fadeOut(400,function(){
+			//		$('.camera_loader',wrap).css({'visibility':'visible'});
+			//	});
+			//}
 			var rows = opts.rows,
 				cols = opts.cols,
 				couples = 1,
