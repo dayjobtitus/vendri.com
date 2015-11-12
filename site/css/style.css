@@ -2,14 +2,14 @@
 @import url(animate.css);
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 @import url(//fonts.googleapis.com/css?family=Raleway:400,600);
-@import url(//fonts.googleapis.com/css?family=Roboto:300,300italic,400,600);
+@import url(//fonts.googleapis.com/css?family=Helvetica:300,300italic,400,600);
 @import url(//fonts.googleapis.com/css?family=Open+Sans);
 @import url(//fonts.googleapis.com/css?family=Ubuntu);
 /*========================================================
                       Main Styles
 =========================================================*/
 body {
-  font: 600 13px/24px "Roboto", sans-serif;
+  font: 600 13px/24px "Ubuntu", sans-serif;
   -webkit-text-size-adjust: none;
   background: #f6f6f6;
   color: #8d939b; }
@@ -29,7 +29,7 @@ h2 {
   color: #fff; }
   h2.change {
     font: 400 60px/60px "Raleway", sans-serif;
-    color: #8dbf41; }
+    color: Lime; }
 
 h3 {
   font: 400 36px/48px "Raleway", sans-serif;
@@ -37,18 +37,18 @@ h3 {
   text-transform: capitalize; }
 
 h4 {
-  font: 300 26px/26px "Roboto", sans-serif; }
+  font: 300 26px/26px "Ubuntu", sans-serif; }
 
 h5 {
   font: 400 20px/24px "Raleway", sans-serif; }
 
 h6 {
-  font: 600 17px/20px "Roboto", sans-serif; }
+  font: 600 17px/20px "Ubuntu", sans-serif; }
 
 h4 a:hover, h5 a:hover, h6 a:hover {
-  color: #8dbf41; }
+  color: limegreen; }
 h4 a:active, h5 a:active, h6 a:active {
-  color: #719934; }
+  color: lime; }
 
 p a:hover, .marked-list a:hover, .list a:hover {
   text-decoration: underline; }
@@ -78,17 +78,17 @@ a[href^="callto:"] {
 
 a[href^="callto:"]:hover,
 a[href^="mailto:"]:hover {
-  color: #8dbf41; }
+  color: limegreen; }
 a[href^="callto:"]:active,
 a[href^="mailto:"]:active {
-  color: #719934; }
+  color: lime; }
 
 blockquote q {
   display: inline-block;
-  font: 600 17px/29px "Roboto", sans-serif;
+  font: 600 17px/29px "Ubuntu", sans-serif;
   font-style: italic;
   padding: 36px 47px 76px;
-  border: solid 1px #8dbf41; }
+  border: solid 1px lime; }
 blockquote .blockq_img {
   margin-top: -50px; }
   blockquote .blockq_img img {
@@ -98,13 +98,13 @@ blockquote .blockq_img {
 blockquote cite {
   margin-top: 19px;
   display: block;
-  font: 300 26px/26px "Roboto", sans-serif;
+  font: 300 26px/26px "Ubuntu", sans-serif;
   color: #414851; }
   blockquote cite span {
     margin-top: 8px;
     display: inherit;
-    font: 400 17px/17px "Roboto", sans-serif;
-    color: #8dbf41; }
+    font: 400 17px/17px "Ubuntu", sans-serif;
+    color: lime; }
 
 strong {
   font-weight: 700; }
@@ -170,13 +170,12 @@ article + article, p + .btn-off-1, h3 + p, p + p.lh, h3 + h5 {
     .brand_name a:before {
       position: absolute;
       content: '\f0eb';
-      color: #fff;
+      color: black;
       font-size: 35px;
       line-height: 73px;
-      font-family: "FontAwesome";
-      width: 73px;
-      height: 73px;
-      background: #8dbf41;
+      width: 216px;
+      height: 80px;
+      background:images/Vendribanner.png;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;
@@ -186,7 +185,7 @@ article + article, p + .btn-off-1, h3 + p, p + p.lh, h3 + h5 {
 
 /*==================  Backgrounds  ======================*/
 .bg-primary {
-  background: #8dbf41;
+  background: black;
   color: #fff; }
 
 .bg-default {
@@ -202,7 +201,7 @@ article + article, p + .btn-off-1, h3 + p, p + p.lh, h3 + h5 {
   display: inline-block;
   font: 400 20px/20px "Raleway", sans-serif;
   padding: 23px 36px;
-  background: #8dbf41;
+  background: black;
   color: #fff; }
   .btn:hover {
     color: #414851;
@@ -239,12 +238,12 @@ article + article, p + .btn-off-1, h3 + p, p + p.lh, h3 + h5 {
     opacity: 0.7; }
 
 .btn-1__md {
-  color: #8dbf41;
-  border-color: #8dbf41;
+  color: dimgray;
+  border-color: dimgray;
   border-width: 1px;
   padding: 15px 32px; }
   .btn-1__md:before {
-    background: #8dbf41; }
+    background: darkgrey; }
   .btn-1__md:hover {
     color: #fff; }
 
@@ -298,7 +297,7 @@ article + article, p + .btn-off-1, h3 + p, p + p.lh, h3 + h5 {
   width: 152px;
   margin-top: 14px;
   padding: 27px 0 16px;
-  background: #8dbf41;
+  background: dimgray;
   z-index: 2;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -322,7 +321,7 @@ article + article, p + .btn-off-1, h3 + p, p + p.lh, h3 + h5 {
   font: 400 17px/18px "Raleway", sans-serif;
   padding: 9px 10px 9px 23px; }
 .sf-menu ul > li.sfHover > a, .sf-menu ul > li > a:hover {
-  color: #8dbf41;
+  color: black;
   background: #fff; }
 
 .sf-menu ul ul {
@@ -334,7 +333,7 @@ article + article, p + .btn-off-1, h3 + p, p + p.lh, h3 + h5 {
   left: 100%;
   width: 152px;
   padding: 27px 0 16px;
-  background: #8dbf41;
+  background: black;
   z-index: 4;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -418,7 +417,7 @@ article + article, p + .btn-off-1, h3 + p, p + p.lh, h3 + h5 {
       background: #f5f5f5;
       color: #2d2d2d; }
     .rd-mobilemenu_ul a:hover {
-      background: #8dbf41;
+      background: lime;
       color: #FFF; }
     .rd-mobilemenu_ul a .rd-submenu-toggle {
       position: absolute;
@@ -580,7 +579,7 @@ article + article, p + .btn-off-1, h3 + p, p + p.lh, h3 + h5 {
   font-size: 24px;
   line-height: 46px;
   color: #fff;
-  background: #8dbf41;
+  background: #222223;
   border-radius: 50%;
   -webkit-box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4);
@@ -634,7 +633,7 @@ article + article, p + .btn-off-1, h3 + p, p + p.lh, h3 + h5 {
                      HEADER  Section
 =========================================================*/
 header {
-  background: #fff;
+  background: images/Vendribanner.png;
   padding: 34px 0 13px; }
   header .brand {
     float: left; }
@@ -708,9 +707,9 @@ main {
 .event-style {
   display: inline-block;
   font: 400 24px/24px "Open Sans", sans-serif;
-  color: #8dbf41;
+  color: black;
   padding: 15px 20px;
-  border: solid 1px #8dbf41;
+  border: solid 1px black;
   text-transform: capitalize; }
 
 .event-style__md {
@@ -721,13 +720,13 @@ main {
 
 /*==================  Font Primary  ======================*/
 .font-primary {
-  font: 300 22px/32px "Roboto", sans-serif; }
+  font: 300 22px/32px "Ubuntu", sans-serif; }
 
 .font-primary-2 {
-  color: #8dbf41;
-  font: 600 48px/48px "Roboto", sans-serif; }
+  color: black;
+  font: 600 48px/48px "Ubuntu", sans-serif; }
   .font-primary-2 span {
-    font: 300 22px/48px "Roboto", sans-serif;
+    font: 300 22px/48px "Ubuntu", sans-serif;
     color: #414851;
     margin-top: 10px;
     display: inline-block; }
@@ -778,7 +777,7 @@ main {
   background: rgba(36, 36, 36, 0.6);
   padding: 37px 25px 44px 25px; }
   .unit-wr time {
-    color: #8dbf41; }
+    color: lime; }
   .unit-wr p {
     color: #9f9f9f; }
 
@@ -792,7 +791,7 @@ main {
     line-height: 32px;
     top: -2px;
     left: 7px;
-    color: #8dbf41; }
+    color: black; }
 
 .icon-wr__md:before {
   font-size: 42px;
@@ -819,9 +818,9 @@ main {
     padding-bottom: 36px; }
   .post_meta {
     margin-top: 17px;
-    color: #8dbf41; }
+    color: whitesmoke; }
     .post_meta p {
-      color: #8dbf41; }
+      color: whitesmoke; }
     .post_meta p + p, .post_meta time + p {
       margin-top: 5px; }
   .post_overlay {
@@ -856,10 +855,10 @@ main {
       -o-transform: translateY(-65%);
       -webkit-transform: translateY(-65%);
       transform: translateY(-65%); }
-  .post:hover .post_cnt {
-    opacity: 0; }
-  .post:hover .post_overlay {
-    opacity: 1; }
+  /*.post:hover .post_cnt {  opacity: 0; }*/
+  /*.post:hover .post_overlay {  opacity: 1; }*/
+    .post_overlay:hover {  opacity: 1; background-color: rgb(36, 36, 36); }
+    .post .post_info a{ color: #ccc !important; }
 
 .post [class*='fa-']:before, .unit-wr [class*='fa-']:before {
   padding-right: 5px; }
@@ -883,7 +882,7 @@ main {
     color: #fff;
     width: 73px;
     height: 73px;
-    background: #8dbf41;
+    background: black;
     text-align: center;
     font-size: 35px;
     line-height: 73px;
@@ -901,7 +900,7 @@ main {
     left: 0;
     font-weight: 400;
     font-family: "FontAwesome";
-    color: #8dbf41; }
+    color: black; }
 
 .marked-list li {
   padding-left: 18px; }
@@ -912,7 +911,7 @@ main {
   .marked-list li + li {
     margin-top: 5px; }
 .marked-list a:hover {
-  color: #8dbf41;
+  color: black;
   text-decoration: none; }
 
 .marked-list-1 li {
@@ -937,7 +936,7 @@ main {
       position: absolute;
       content: counter(li,decimal) ".";
       counter-increment: li;
-      color: #8dbf41;
+      color: black;
       font-size: 30px;
       line-height: 78px;
       font-family: "Raleway", sans-serif;
@@ -948,7 +947,7 @@ main {
       content: '';
       width: 78px;
       height: 78px;
-      border: 2px solid #8dbf41;
+      border: 2px solid lime;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;
@@ -982,13 +981,13 @@ main {
 
 /*==================   Border  ======================*/
 .border {
-  border-right: solid 1px #8dbf41; }
+  border-right: solid 1px lime; }
 
 /*==================    Mail   ======================*/
 .mail {
   display: inline-block;
-  font: 400 20px/20px "Roboto", sans-serif;
-  color: #8dbf41; }
+  font: 400 20px/20px "Ubuntu", sans-serif;
+  color: black; }
   .mail[href^="mailto:"]:hover {
     text-decoration: none;
     color: #414851; }
@@ -1045,7 +1044,7 @@ footer .footer-wr {
     line-height: 48px;
     width: 48px;
     height: 48px;
-    background: #8dbf41;
+    background: black;
     color: #fff;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1056,8 +1055,8 @@ footer .footer-wr {
     transition: 0.3s; }
     .social-link > li a:hover {
       background: #fff;
-      color: #8dbf41;
-      border: solid 1px #8dbf41; }
+      color: lime;
+      border: solid 1px lime; }
     .social-link > li a:active {
       background: rgba(141, 191, 65, 0.1); }
   .social-link > li a + a {
@@ -1068,10 +1067,10 @@ footer .footer-wr {
   font: 400 14px/14px "Ubuntu", sans-serif;
   color: #414851; }
   .privacy-wr p a:hover {
-    color: #8dbf41;
+    color: lime;
     text-decoration: none; }
   .privacy-wr p a:active {
-    color: #719934; }
+    color: lime; }
 
 /*========================================================
                      RESPONSIVE

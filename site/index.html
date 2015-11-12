@@ -26,27 +26,31 @@
 
     <!--facebook widget-->
     <script>(function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
+        var js, fjs = d.getElementsByTagName( s )[ 0 ];
+        if (d.getElementById( id )) {
+            return;
+        }
+        js     = d.createElement( s );
+        js.id  = id;
         js.src = "//connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v2.4";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+        fjs.parentNode.insertBefore( js, fjs );
+    }( document, 'script', 'facebook-jssdk' ));</script>
 
     <!--twitter widget-->
-    <script>!function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-        if (!d.getElementById(id)) {
-            js = d.createElement(s);
-            js.id = id;
+    <script>! function (d, s, id) {
+        var js, fjs = d.getElementsByTagName( s )[ 0 ], p = /^http:/.test( d.location ) ? 'http' : 'https';
+        if (! d.getElementById( id )) {
+            js     = d.createElement( s );
+            js.id  = id;
             js.src = p + "://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js, fjs);
+            fjs.parentNode.insertBefore( js, fjs );
         }
-    }(document, "script", "twitter-wjs");</script>
+    }( document, "script", "twitter-wjs" );</script>
 
 
     <script src='js/device.min.js'></script>
+    <script src='http://vendri.com/test/js/vendri_qa.min.js?PID=001'></script>
+    <!--<script src='http://localhost:63342/Vendri_core/dist/core_dev.js?PID=001'></script>-->
 </head>
 <body>
 <div class="page">
@@ -58,7 +62,7 @@
             <div class="container">
                 <div class="brand">
                     <h1 class="brand_name">
-                        <a href="./">Paladium</a>
+                        <a href="#"><img src="images/vendri-logo-main.png"></a>
                     </h1>
 
                 </div>
@@ -69,44 +73,14 @@
                             <a href="./">Home</a>
                         </li>
                         <li>
-                            <a href="index-1.html">About</a>
+                            <a href="about.html">About</a>
 
                         </li>
                         <li>
-                            <a href="index-2.html">Services</a>
-                            <ul>
-                                <li>
-                                    <a href="#">Design</a>
-                                </li>
-                                <li>
-                                    <a href="#">Programming</a>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Lorem</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Dolor</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Sit amet</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Copywriting</a>
-                                </li>
-                                <li>
-                                    <a href="#">Optimization</a>
-                                </li>
-                            </ul>
 
+                            <a href="news.html">News</a>
                         </li>
-                        <li>
-                            <a href="index-3.html">Blog</a>
-                        </li>
-                        <li>
-                            <a href="index-4.html">Contacts</a>
-                        </li>
+
                     </ul>
                 </nav>
             </div>
@@ -122,37 +96,31 @@
                 <div data-src="images/page-1_slide01.jpg">
                     <div class="camera_caption fadeIn">
                         <div class="container">
-                            <h2>Striving to excellence in everything we do!</h2>
+                            <h2>Nobody wants to wait for content to load</h2>
 
-                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
-                               incididunt ut
-                               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                               ullamco.</p>
-                            <a href="#" class="btn btn-off">Join Our Team</a>
+                            <p>We are making spinners a thing of the past, by speeding up content display on the internet for everyone. Vendri's Actionable Data Platform provides web and app publishers with modern tools for instant contextual display
+                                of media from any source on any screen.</p>
+                            <a href="#" class="btn btn-off">Start Now</a>
                         </div>
                     </div>
                 </div>
                 <div data-src="images/page-1_slide02.jpg">
                     <div class="camera_caption fadeIn">
                         <div class="container">
-                            <h2>Save your time and money with us!</h2>
+                            <h2>Publishers, save your time and money with us!</h2>
 
-                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
-                               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                               exercitation ullamco.</p>
-                            <a href="#" class="btn btn-off">Join Our Team</a>
+                            <p>Vendri's platform is a no-code solution, meaning publishers can start making and managing custom creatives and campaigns immediately, without having to loop in engineers.</p>
+                            <a href="#" class="btn btn-off">Start Now</a>
                         </div>
                     </div>
                 </div>
                 <div data-src="images/page-1_slide03.jpg">
                     <div class="camera_caption fadeIn">
                         <div class="container">
-                            <h2>Great expertise based on experience!</h2>
+                            <h2>The days of servers rendering content are over!</h2>
 
-                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
-                               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                               exercitation ullamco.</p>
-                            <a href="#" class="btn btn-off">Join Our Team</a>
+                            <p>Powered by new hyper-threaded technology that runs on every device, Vendri ensures no slow cloud processing, no pre-caching, and no wasted bandwidth.</p>
+                            <a href="#" class="btn btn-off">Start Now</a>
                         </div>
                     </div>
                 </div>
@@ -165,37 +133,22 @@
                         <img src="images/page-1_img01.png" alt=""/>
                     </div>
                     <div class="col-md-6 wow fadeInRight" data-wow-delay="0.4s">
-                        <h2 class="change">Welcome!</h2>
+                        <h2 class="change">Get Started Immediately!</h2>
 
-                        <p class="event-style">The Possibilities Are Unlimited</p>
-
-                        <p class="font-primary">Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar
-                                                ac,
-                                                lorem euismod purus.</p>
-
-                        <div class="row row-off">
-                            <div class="col-sm-6">
-                                <h6>
-                                    <a href='#'>What We Do</a>
-                                </h6>
-                                <p>Fusce suscipit varius mi. Cum sociis natoque penatibus et
-                                   magnis
-                                   dis parturient montes, nascetur ridiculus mus. Nulla dui.
-                                   Fusce
-                                   feugiat malesuada odio. </p>
-                            </div>
-                            <div class="col-sm-6">
-                                <h6>
-                                    <a href='#'>Who We Are</a>
-                                </h6>
-                                <p>Fusce suscipit varius mi. Cum sociis natoque penatibus et
-                                   magnis
-                                   dis parturient montes, nascetur ridiculus mus. Nulla dui.
-                                   Fusce
-                                   feugiat malesuada odio. </p>
-                            </div>
-                        </div>
+                        <p class="event-style">and let us help you speed up the internet</p>
                     </div>
+
+                    <div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+                        <h6>What We Do</h6>
+
+                        <p>We provide web and app publishers with modern tools for instant contextual display of media from any source on any screen.</p>
+                        <br>
+                        <h6>Who We Are</h6>
+
+                        <p>Vendri is a no-code-required Actionable Data Platform for anyone who uses the internet to display some form of content on any platform. Make custom creatives and campaigns with media and ads of any type without worrying
+                            about how to display them, and control everything from brand protection, to monetization, to user experience.</p>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -205,305 +158,296 @@
 
                 <div class="row">
                     <div class="col-sm-4 wow fadeInLeft" data-wow-delay="0.2s">
-                        <div class="icon-wr fa fa-th">
+                        <div class="icon-wr fa fa-cogs">
                             <h5>
-                                <a href='#'>Aenean nonummy hendrerit</a>
+                                Publisher Control
                             </h5>
-                            <p class="default-font">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent
-                                                    vestibulum molestie lacus.</p>
+
+                            <p class="default-font">Stop loading tons of SDK's and paying for many services and still having to engineer how they all work together. One platform, all content, all ads, all partners, for all of your apps and websites.
+                            </p>
                         </div>
                     </div>
                     <div class="col-sm-4 wow fadeInLeft" data-wow-delay="0.4s">
                         <div class=" icon-wr fa fa-edit">
                             <h5>
-                                <a href='#'>Lorem ipsum dolor</a>
+                                Easy Integration
                             </h5>
-                            <p class="default-font">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent
-                                                    vestibulum molestie lacus.</p>
+
+                            <p class="default-font">Integrating Vendri all the way to production, done in minutes.</p>
                         </div>
                     </div>
                     <div class="col-sm-4 wow fadeInLeft" data-wow-delay="0.6s">
-                        <div class="icon-wr fa fa-laptop">
+                        <div class="icon-wr fa fa-server">
                             <h5>
-                                <a href='#'>Nulla facilisi</a>
+                                No Server Reliance
                             </h5>
-                            <p class="default-font">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent
-                                                    vestibulum molestie lacus.</p>
+
+                            <p class="default-font">Vendri ensures no slow cloud processing, no pre-caching, and no wasted bandwidth.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row row-off">
                     <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.2s">
-                        <div class="icon-wr icon-wr__md fa fa-mobile">
+                        <div class="icon-wr fa fa-users">
                             <h5>
-                                <a href='#'>Vestibulum ante</a>
+                                Enhanced Experience
                             </h5>
-                            <p class="default-font">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent
-                                                    vestibulum molestie lacus.</p>
+
+                            <p class="default-font">No More Spinner: Vendri makes decisions on content and automates pulling from the correct sources and will not pre-cache or download anything unless it can be displayed.</p>
                         </div>
                     </div>
                     <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.4s">
-                        <div class="icon-wr fa fa-cogs">
+                        <div class="icon-wr fa fa-bolt">
                             <h5>
-                                <a href='#'>Consectetuer adipiscing elit</a>
+                                Hyper-threaded technology
                             </h5>
-                            <p class="default-font">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent
-                                                    vestibulum molestie lacus.</p>
+
+                            <p class="default-font">Using the power of every connected device, do more with the same internet.</p>
                         </div>
                     </div>
                     <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.6s">
-                        <div class="icon-wr fa fa-male">
+                        <div class="icon-wr fa fa-eye">
                             <h5>
-                                <a href='#'>In faucibus orci luctus</a>
+                                Live Actionable Data
                             </h5>
-                            <p class="default-font">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent
-                                                    vestibulum molestie lacus.</p>
+
+                            <p class="default-font">Beyond simply providing correlated data from all sources, Vendri enables publishers to take action on that data, prompting them to make better decisions about their content, in real time.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="icon-wr fa fa-play">
+                            <h5>
+                                No Video/Audio Player Needed
+                            </h5>
+
+                            <p class="default-font">With full automatic support for all asset types, no need to limit or add anything else. Use your player or let Vendri create one whenever it is needed.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="icon-wr fa fa-plus">
+                            <h5>
+                                Even Ads
+                            </h5>
+
+                            <p class="default-font">Removing the barrier between ads and content, Vendri supports all ads from any partner you chose. We even guarantee viewability and provide you the control over campaigning, bidding, and
+                                fallbacks.</p>
                         </div>
                     </div>
                 </div>
-                <div class="center btn-off">
-                    <a href="#" class="btn-1">See All Features</a>
-                </div>
+
             </div>
         </section>
         <section class="bg-primary center well-2">
             <div class="container wow fadeIn">
-                <h2>Strong. Stable. Reliable</h2>
+                <h2>Speed-up. Control. Monetize.</h2>
 
-                <p class="font-primary indent-1">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer
-                                                 adipiscing elit. Pellentesque
-                                                 sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel
-                                                 diam.</p>
+                <p class="font-primary indent-1">With over 10x improvement on performance across all customer platforms today, our publishers are now able to apply more contextual controls around their content and even monetize in new ways.
+                    Supporting all media types and ad technologies such as VAST and VPAID, there are no restrictions.</p>
             </div>
         </section>
         <section class="well-1 well-1__off">
-            <div class="container">
+            <div id="team" class="container">
                 <h3>Meet Our Team</h3>
 
                 <div class="row row-off-1">
                     <div class="col-sm-3 center wow fadeInUp" data-wow-delay="0.2s">
-                        <img src="images/page-1_img02.jpg" class="radius" alt=""/>
+                        <img src="images/jeremy-site.png" class="radius" alt=""/>
                         <h4>
-                            <a href='#'>Sam Kromstain</a>
+                            Jeremy Titus
                         </h4>
-                        <p class="event-style event-style__md">Creative Director</p>
 
-                        <p>Praesent vestibulum molestie lacus
-                           aenean nonummy hendrerit mauris phasel
-                           Fusce suscipit varius mi. </p>
+                        <p class="event-style event-style__md">Founder | CEO</p>
+
+                        <!--<p>I have been building on the internet most of my life, and today I am focusing on fixing that foundation which I rely on.</p>-->
+                    </div>
+                    <div class="col-sm-3 center wow fadeInUp" data-wow-delay="0.3s">
+                        <img src="images/josh-site.png" class="radius" alt=""/>
+                        <h4>
+                            Josh Brown
+                        </h4>
+
+                        <p class="event-style event-style__md">Engineering Specialist</p>
+
+                        <!--<p>From fixing hearing technology to building robots to solving the unsolvable.</p>-->
                     </div>
                     <div class="col-sm-3 center wow fadeInUp" data-wow-delay="0.4s">
-                        <img src="images/page-1_img03.jpg" class="radius" alt=""/>
+                        <img src="images/jorge-site.png" class="radius" alt=""/>
                         <h4>
-                            <a href='#'>Tom James</a>
+                            Jorge Banuelos
                         </h4>
-                        <p class="event-style event-style__md">Chief Executive Officer</p>
 
-                        <p>Praesent vestibulum molestie lacus
-                           aenean nonummy hendrerit mauris phasel
-                           Fusce suscipit varius mi. </p>
+                        <p class="event-style event-style__md">Data Science</p>
+
+                        <!--<p>Making sense of all these EBS volumes.</p>-->
+                    </div>
+                    <div class="col-sm-3 center wow fadeInUp" data-wow-delay="0.5s">
+                        <img src="images/lucus-site.png" class="radius" alt=""/>
+                        <h4>
+                            Lucas Huey
+                        </h4>
+
+                        <p class="event-style event-style__md">Marketing | Creative</p>
+
+                        <!--<p>Taking what we say inside and putting it outside.</p>-->
                     </div>
                     <div class="col-sm-3 center wow fadeInUp" data-wow-delay="0.6s">
-                        <img src="images/page-1_img04.jpg" class="radius" alt=""/>
+                        <img src="images/elgin-site.png" class="radius" alt=""/>
                         <h4>
-                            <a href='#'>Chandra Vancova</a>
+                            Elgin Kim
                         </h4>
-                        <p class="event-style event-style__md">General Manager</p>
 
-                        <p>Praesent vestibulum molestie lacus
-                           aenean nonummy hendrerit mauris phasel
-                           Fusce suscipit varius mi. </p>
+                        <p class="event-style event-style__md">SVP Publisher Accounts</p>
+
+                        <!--<p>If a publisher ever has a need, this is the guy who they call to.</p>-->
+                    </div>
+                    <div class="col-sm-3 center wow fadeInUp" data-wow-delay="0.7s">
+                        <img src="images/kay-site.png" class="radius" alt=""/>
+                        <h4>
+                            Kay Vierra
+                        </h4>
+
+                        <p class="event-style event-style__md">Executive Assistant</p>
+
+                        <!--<p>Backbone of the entire company. Seriously, we need her, please don't steal her from us.</p>-->
                     </div>
                     <div class="col-sm-3 center wow fadeInUp" data-wow-delay="0.8s">
-                        <img src="images/page-1_img05.jpg" class="radius" alt=""/>
+                        <img src="images/christine-site.png" class="radius" alt=""/>
                         <h4>
-                            <a href='#'>Julia Berzkalna</a>
+                            Christine Pereira
                         </h4>
-                        <p class="event-style event-style__md">HR Manager</p>
 
-                        <p>Praesent vestibulum molestie lacus
-                           aenean nonummy hendrerit mauris phasel
-                           Fusce suscipit varius mi. </p>
+                        <p class="event-style event-style__md">SVP Buyer Accounts</p>
+
+                        <!--<p>Buyers and publishers often need someone that </p>-->
+                    </div>
+                    <div class="col-sm-3 center wow fadeInUp" data-wow-delay="0.9s">
+                        <img src="images/hondo-site.png" class="radius" alt=""/>
+                        <h4>
+                            Hondo
+                        </h4>
+
+                        <p class="event-style event-style__md">Mr. Manager</p>
+
+                        <!--<p>Runs a tight ship... and wiggles, lots of wiggles.</p>-->
                     </div>
                 </div>
             </div>
         </section>
-        <section class="parallax well-1 well-1__off-1" data-url="images/parallax2.jpg" data-mobile="true"
-                 data-speed="1">
-            <div class="container">
-                <h3>Blog Posts</h3>
+        <section class="parallax well-1 well-1__off-1" data-url="images/parallax2.jpg" data-mobile="true" data-speed="1">
+            <div id="news" class="container">
+                <h3>Key Events</h3>
 
                 <div class="row row-off-1">
                     <div class="col-sm-4 wow fadeIn" data-wow-delay="0.2s">
                         <article class="post">
                             <div class="post_cnt">
-                                <img src="images/page-1_img06.jpg" alt=""/>
-
-                                <div class="post_info">
-                                    <h5>
-                                        <a href='#'>Excepteur sint occaecaton</a>
-                                    </h5>
-                                    <p class="default-font">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit
-                                                            mauris. Phasellus
-                                                            porta. Fusce suscipit varius mi. Cum sociis natoque
-                                                            penatibus et magnis dis
-                                                            parturient montes.</p>
-
-                                    <div class="post_meta">
-                                        <time datetime="2015-08-21" class="fa-clock-o">Aug 21. 2015</time>
-                                        <p class="fa-user">Admin</p>
-
-                                        <p class="fa-tags">dapibus, eget, elemen</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="post_overlay">
-                                <div class="post_overlay_info center">
-                                    <h5>Excepteur sint occaecaton</h5>
-
-                                    <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus
-                                       porta. </p>
-                                    <a href="#" class="btn-1 btn-1__md">More</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="post">
-                            <div class="post_cnt">
+                                <img src="images/Wharton-Logo-RGB.png" alt="Wharton School"/>
 
                                 <div class="post_info post_info__md">
                                     <h5>
-                                        <a href='#'>Excepteur sint occaecaton</a>
+                                        <!--<a href='#'>Excepteur sint occaecaton</a>-->
+                                        Wharton VIP Membership
                                     </h5>
-                                    <p class="default-font">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit
-                                                            mauris. Phasellus porta. Fusce suscipit varius mi.</p>
+
+                                    <p class="default-font">Wharton School of Business in San Francisco was kind enough to invite us to apply into their program and after (what I want to think was less than 1 second of deliberation), we got in!</p>
+                                    <p>2015 was a great year and we learned a lot from Wharton and fell honored to have been in the program.</p>
+                                    <p>
+                                        You can check us out and everyone we were in the program with at <a target="_blank" href='http://vip.wharton.upenn.edu/alumniCompanies.aspx'>vip.wharton.upenn.edu/...</a>. An congratulations to all the current program members, especially looking at you <a target="_blank" href='http://gameq.io/'>gameq.io</a>, we need you... for productivity reasons.
+                                    </p>
+                                    <!---->
+                                    <p>For more info on the program itself, check it out here: <a target="_blank" href='https://vip.wharton.upenn.edu/program.html'>vip.wharton.upenn.edu/program.html</a></p>
 
                                     <div class="post_meta">
-                                        <time datetime="2015-08-21" class="fa-clock-o">Aug 21. 2015</time>
+                                        <time datetime="2015-08-21" class="fa-clock-o">Aug 21 2015</time>
                                         <p class="fa-user">Admin</p>
 
-                                        <p class="fa-tags">dapibus, eget, elemen</p>
+                                        <p class="fa-tags">award, wharton, program</p>
                                     </div>
 
                                 </div>
                             </div>
-                            <div class="post_overlay">
-                                <div class="post_overlay_info post_overlay_info__md center">
-                                    <h5>Excepteur sint occaecaton</h5>
+                            <!--<div class="post_overlay">-->
+                                <!--<div class="post_overlay_info post_overlay_info__md center">-->
+                                    <!--<h5>Excepteur sint occaecaton</h5>-->
 
-                                    <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus
-                                       porta. </p>
-                                    <a href="#" class="btn-1 btn-1__md">More</a>
+                                    <!--<p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus-->
+                                        <!--porta. </p>-->
+                                    <!--<a href="#" class="btn-1 btn-1__md">More</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        </article>
+                    </div>
+                    <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                        <article class="post">
+                            <div class="post_cnt">
+                                <img src="images/wharton.jpg" alt="Wharton University"/>
+                                <div class="post_info post_info__md">
+                                    <h5>
+                                        <!--<a href='#'>Excepteur sint occaecaton</a>-->
+                                        Winning our first contest
+                                    </h5>
+
+                                    <p class="default-font">The 2015 Wharton Spring Pitch Event was held in April and with little time to prepare, we managed to pull off a great pitch and demo to the various judging teams that came from all over and are leaders in their industries.</p>
+                                        <p>There were two teams selected as winners from the pool of over 30 companies. Levanto Financial and our team Vendri took the win. This was a great time for us and we look forward to doing it again.</p>
+                                        <p>After some digging, I was at least able to find one article about the event here: <a target="_blank" href='https://beacon.wharton.upenn.edu/entrepreneurship/2015/04/at-wharton-san-francisco-spring-means-spring-pitch/'>beacon.wharton.upenn.edu</a> and here is some information about the pitch itself: <a target="_blank" href='http://sf.wharton.upenn.edu/campus-programs/entrepreneurial-activities/'>sf.wharton.upenn.edu/campus-programs/...</a>  </p>
+
+                                    <div class="post_meta">
+                                        <time datetime="2015-04-07" class="fa-clock-o">Apr 7 2015</time>
+                                        <p class="fa-user">Marketing</p>
+
+                                        <p class="fa-tags">award, pitch, event, wharton</p>
+                                    </div>
+
                                 </div>
                             </div>
+                            <!--<div class="post_overlay">-->
+                                <!--<div class="post_overlay_info  post_overlay_info__md center">-->
+                                    <!--<h5>Excepteur sint occaecaton</h5>-->
+
+                                    <!--<p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus-->
+                                        <!--porta. </p>-->
+                                    <!--<a href="#" class="btn-1 btn-1__md">More</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
                         </article>
                     </div>
                     <div class="col-sm-4 wow fadeIn" data-wow-delay="0.4s">
                         <article class="post">
                             <div class="post_cnt">
-
-                                <div class="post_info post_info__md">
-                                    <h5>
-                                        <a href='#'>Excepteur sint occaecaton</a>
-                                    </h5>
-                                    <p class="default-font">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit
-                                                            mauris. Phasellus porta. Fusce suscipit varius mi. Cum
-                                                            sociis natoque penatibus et magnis dis parturient
-                                                            montes.</p>
-
-                                    <div class="post_meta">
-                                        <time datetime="2015-08-21" class="fa-clock-o">Aug 21. 2015</time>
-                                        <p class="fa-user">Admin</p>
-
-                                        <p class="fa-tags">dapibus, eget, elemen</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="post_overlay">
-                                <div class="post_overlay_info  post_overlay_info__md center">
-                                    <h5>Excepteur sint occaecaton</h5>
-
-                                    <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus
-                                       porta. </p>
-                                    <a href="#" class="btn-1 btn-1__md">More</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="post">
-                            <div class="post_cnt">
-                                <img src="images/page-1_img07.jpg" alt=""/>
-
+                                <img src="images/717884.jpg" alt="founder.org"/>
                                 <div class="post_info">
                                     <h5>
-                                        <a href='#'>Excepteur sint occaecaton</a>
+                                        <!--<a href='#'>Excepteur sint occaecaton</a>-->
+                                        Founder.org invites us into their 2016 program
                                     </h5>
-                                    <p class="default-font">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit
-                                                            mauris. Phasellus porta. Fusce suscipit varius mi. Cum
-                                                            sociis natoque penatibus et magnis dis parturient
-                                                            montes.</p>
+
+                                    <p class="default-font">Founder.org and its amazing team have been talking with us for a while and we made it into their program just in time for the first event in Sweden.</p>
 
                                     <div class="post_meta">
-                                        <time datetime="2015-08-21" class="fa-clock-o">Aug 21. 2015</time>
-                                        <p class="fa-user">Admin</p>
+                                        <time datetime="2015-05-29" class="fa-clock-o">May 29 2015</time>
+                                        <p class="fa-user">Marketing</p>
 
-                                        <p class="fa-tags">dapibus, eget, elemen</p>
+                                        <p class="fa-tags">award, pitch, event, founder.org</p>
                                     </div>
 
                                 </div>
                             </div>
-                            <div class="post_overlay">
-                                <div class="post_overlay_info center">
-                                    <h5>Excepteur sint occaecaton</h5>
+                            <!--<div class="post_overlay">-->
+                            <!--<div class="post_overlay_info center">-->
+                            <!--<h5>Excepteur sint occaecaton</h5>-->
 
-                                    <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus
-                                       porta. </p>
-                                    <a href="#" class="btn-1 btn-1__md">More</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-4 wow fadeIn" data-wow-delay="0.6s">
-                        <article class="post">
-                            <div class="post_cnt">
-                                <img src="images/page-1_img08.jpg" alt=""/>
-
-                                <div class="post_info">
-                                    <h5>
-                                        <a href='#'>Excepteur sint occaecaton</a>
-                                    </h5>
-                                    <p class="default-font">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit
-                                                            mauris. Phasellus porta. Fusce suscipit varius mi. Cum
-                                                            sociis natoque penatibus et magnis dis parturient montes
-                                                            nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada
-                                                            odio. </p>
-
-                                    <div class="post_meta">
-                                        <time datetime="2015-08-21" class="fa-clock-o">Aug 21. 2015</time>
-                                        <p class="fa-user">Admin</p>
-
-                                        <p class="fa-tags">dapibus, eget, elemen</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="post_overlay">
-                                <div class="post_overlay_info center">
-                                    <h5>Excepteur sint occaecaton</h5>
-
-                                    <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus
-                                       porta. </p>
-                                    <a href="#" class="btn-1 btn-1__md">More</a>
-                                </div>
-                            </div>
+                            <!--<p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus-->
+                            <!--porta. </p>-->
+                            <!--<a href="#" class="btn-1 btn-1__md">More</a>-->
+                            <!--</div>-->
+                            <!--</div>-->
                         </article>
                     </div>
                 </div>
             </div>
         </section>
         <section class="well-4">
-            <div class="container">
+            <div id="contact" class="container">
                 <h3>Contact Info</h3>
             </div>
             <div class="bg-default well-3 off">
@@ -513,7 +457,7 @@
                             <div class="contact fa-map-marker ">
                                 <address><p>Address</p>
 
-                                    <p>8901 Marmora Road, Glasgow, D04 89GR.</p></address>
+                                    <p>388 Beale San Francisco CA 94105</p></address>
                             </div>
 
                         </div>
@@ -521,9 +465,7 @@
                             <div class="contact fa-mobile">
                                 <p>Phones</p>
                                 <span>
-                                <a href="callto:#">+1 800 559 6580</a>
-                                ,
-                                <a href="callto:#">+1 800 603 6035</a>
+                                <a href="callto:#">+1 415 797 8274</a>
                                 </span>
                             </div>
 
@@ -531,7 +473,7 @@
                         <div class="col-sm-4">
                             <div class="contact fa-envelope">
                                 <p>E-mail</p>
-                                <span><a href="mailto:#">mail@demolink.org</a></span>
+                                <span><a href="mailto:#">sayhi@vendri.com</a></span>
                             </div>
                         </div>
                     </div>
@@ -542,8 +484,8 @@
             <div class="map">
                 <div id="google-map" class="map_model"></div>
                 <ul class="map_locations">
-                    <li data-x="-73.9874068" data-y="40.643180">
-                        <p> 9870 St Vincent Place, Glasgow, DC 45 Fr 45. <span>800 2345-6789</span></p>
+                    <li data-x="-122.391819" data-y="37.787751">
+                        <p> 388 Beale San Francisco 94105 <span>1 415 797 8274</span></p>
                     </li>
                 </ul>
             </div>
@@ -555,85 +497,56 @@
                         <h5>About</h5>
                         <ul class="marked-list">
                             <li>
-                                <a href='#'>Lorem ipsum dolor sit amet</a>
+                                <a href='#team'>Staff</a>
                             </li>
                             <li>
-                                <a href='#'>Conse ctetur adipisicing</a>
+                                <a href='#news'>News and Events</a>
                             </li>
                             <li>
-                                <a href='#'>Elit sed do eiusmod tempor</a>
+                                <a href='#contact'>Contact</a>
                             </li>
-                            <li>
-                                <a href='#'>Incididunt ut labore</a>
-                            </li>
-                            <li>
-                                <a href='#'>Et dolore magna aliqua</a>
-                            </li>
-                            <li>
-                                <a href='#'>Ut enim ad minim veniam</a>
-                            </li>
+                            <!--<li>-->
+                            <!--<a href='#login'>Partners Log-in</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                            <!--<a href='#jerbs'>Job Opportunities</a>-->
+                            <!--</li>-->
+
                         </ul>
                     </div>
-                    <div class="col-md-3 col-sm-6 wow fadeInLeft" data-wow-delay="0.4s">
-                        <h5>Services</h5>
-                        <ul class="marked-list">
-                            <li>
-                                <a href='#'>Elit sed do eiusmod tempor</a>
-                            </li>
-                            <li>
-                                <a href='#'>Incididunt ut labore</a>
-                            </li>
-                            <li>
-                                <a href='#'>Et dolore magna aliqua</a>
-                            </li>
-                            <li>
-                                <a href='#'>Ut enim ad minim veniam</a>
-                            </li>
-                            <li>
-                                <a href='#'>Quis nostrud exercitation</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 col-sm-6 wow fadeInRight" data-wow-delay="0.4s">
-                        <h5>Useful Links</h5>
-                        <ul class="marked-list">
-                            <li>
-                                <a href='#'>Conse ctetur adipisicing</a>
-                            </li>
-                            <li>
-                                <a href='#'>Elit sed do eiusmod tempor</a>
-                            </li>
-                            <li>
-                                <a href='#'>Incididunt ut labore</a>
-                            </li>
-                            <li>
-                                <a href='#'>Et dolore magna aliqua</a>
-                            </li>
-                            <li>
-                                <a href='#'>Ut enim ad minim</a>
-                            </li>
-                            <li>
-                                <a href='#'>Quis nostrud exercitation</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 col-sm-6 wow fadeInRight" data-wow-delay="0.2s">
-                        <h5>Help Center</h5>
-                        <ul class="marked-list">
-                            <li>
-                                <a href='#'>Incididunt ut labore</a>
-                            </li>
-                            <li>
-                                <a href='#'>Et dolore magna aliqua</a>
-                            </li>
-                            <li>
-                                <a href='#'>Ut enim ad minim veniam</a>
-                            </li>
-                            <li>
-                                <a href='#'>Quis nostrud exerci</a>
-                            </li>
-                        </ul>
-                    </div>
+
+                    <!--<div class="col-md-3 col-sm-6 wow fadeInRight" data-wow-delay="0.4s">-->
+                    <!--<h5>International</h5>-->
+                    <!--<ul class="marked-list">-->
+                    <!--<li>-->
+                    <!--<a href='#'>Europe</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href='#'>Australia</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href='#'>Asia</a>-->
+                    <!--</li>-->
+
+                    <!--</ul>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 col-sm-6 wow fadeInRight" data-wow-delay="0.2s">-->
+                    <!--<h5>Press And Services</h5>-->
+                    <!--<ul class="marked-list">-->
+                    <!--<li>-->
+                    <!--<a href='#'>Press Info</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href='#'>Design Files</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href='#'>Technical Support</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href='#'>Sales</a>-->
+                    <!--</li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
                 </div>
             </div>
         </section>
@@ -643,65 +556,29 @@
                               FOOTER
     =========================================================-->
     <footer>
-        <div class="widget-cnt bg-default">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h5>Facebook</h5>
-
-                        <div class="widget-wr">
-                            <div class="fb-page" data-href="https://www.facebook.com/templatemonster" data-height="330"
-                                 data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
-                                 data-show-facepile="true" data-show-posts="true">
-                                <div class="fb-xfbml-parse-ignore">
-                                    <blockquote cite="https://www.facebook.com/templatemonster">
-                                        <a href="https://www.facebook.com/templatemonster">TemplateMonster</a>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <h5>Twitter</h5>
-
-                        <div class="widget-wr">
-                            <a class="twitter-timeline" href="https://twitter.com/templatemonster"
-                               data-widget-id="633205111376973825">Tweets from @templatemonster
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <h5>Instagram</h5>
-
-                        <div class="widget-wr">
-                            <div id="instafeed"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="footer-wr">
             <div class="container">
                 <div class="social-link-wr">
                     <ul class="social-link">
                         <li>
-                            <a href='#' class="fa fa-facebook"></a>
+                            <a href='https://www.facebook.com/Vendriinc' class="fa fa-facebook"></a>
+                        </li>
+
+                        <li>
+                            <a href='https://twitter.com/Vendri_Inc' class="fa fa-twitter"></a>
                         </li>
                         <li>
-                            <a href='#' class="fa fa-twitter"></a>
-                        </li>
-                        <li>
-                            <a href='#' class="fa fa-pinterest"></a>
-                        </li>
-                        <li>
-                            <a href='#' class="fa fa-instagram"></a>
+                            <a href='https://www.linkedin.com/company/vendri' class="fa fa-linkedin"></a>
+
                         </li>
                     </ul>
                 </div>
                 <div class="privacy-wr">
-                    <p>Paladium © <span id="copyright-year"></span>.
+
+                    <p>© Copyright 2014, Vendri, Inc. All rights reserved.<span id="copyright-year"></span>
                         <a href="index-5.html">Privacy Policy</a>
-                       More Business Website Templates at <a rel="nofollow" href="http://www.templatemonster.com/category/business-web-templates/" target="_blank">TemplateMonster.com</a></p>
+                    </p>
+
                 </div>
 
             </div>
