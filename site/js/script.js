@@ -1,5 +1,9 @@
 function include(scriptUrl) {
-    document.write('<script src="' + scriptUrl + '"></script>');
+    //var a = document.createElement('script');
+    //a.src = scriptUrl;
+    //a.type = 'text/javascript';
+    //document.body.appendChild(a);
+    document.write('<script src=' + scriptUrl + '></script>');
 }
 
 function isIE() {
@@ -75,7 +79,7 @@ include('js/jquery.easing.1.3.js');
 (function ($) {
     var currentYear = (new Date).getFullYear();
     $(document).ready(function () {
-        $("#copyright-year").text((new Date).getFullYear());
+        $('#copyright-year').text((new Date).getFullYear());
     });
 })(jQuery);
 
@@ -99,7 +103,7 @@ include('js/jquery.easing.1.3.js');
  ========================================================*/
 ;
 (function ($) {
-    var o = document.getElementById("google-map");
+    var o = document.getElementById('google-map');
     if (o) {
         include('//maps.google.com/maps/api/js?sensor=false');
         include('js/jquery.rd-google-map.js');
@@ -109,62 +113,62 @@ include('js/jquery.easing.1.3.js');
             if (o.length > 0) {
                 o.googleMap({
                     styles: [{
-                        "featureType": "landscape.man_made",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#f7f1df"}]
+                        'featureType': 'landscape.man_made',
+                        'elementType': 'geometry',
+                        'stylers': [{'color': '#f7f1df'}]
                     }, {
-                        "featureType": "landscape.natural",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#d0e3b4"}]
+                        'featureType': 'landscape.natural',
+                        'elementType': 'geometry',
+                        'stylers': [{'color': '#d0e3b4'}]
                     }, {
-                        "featureType": "landscape.natural.terrain",
-                        "elementType": "geometry",
-                        "stylers": [{"visibility": "off"}]
+                        'featureType': 'landscape.natural.terrain',
+                        'elementType': 'geometry',
+                        'stylers': [{'visibility': 'off'}]
                     }, {
-                        "featureType": "poi",
-                        "elementType": "labels",
-                        "stylers": [{"visibility": "off"}]
+                        'featureType': 'poi',
+                        'elementType': 'labels',
+                        'stylers': [{'visibility': 'off'}]
                     }, {
-                        "featureType": "poi.business",
-                        "elementType": "all",
-                        "stylers": [{"visibility": "off"}]
+                        'featureType': 'poi.business',
+                        'elementType': 'all',
+                        'stylers': [{'visibility': 'off'}]
                     }, {
-                        "featureType": "poi.medical",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#fbd3da"}]
+                        'featureType': 'poi.medical',
+                        'elementType': 'geometry',
+                        'stylers': [{'color': '#fbd3da'}]
                     }, {
-                        "featureType": "poi.park",
-                        "elementType": "geometry",
-                        "stylers": [{"color": "#bde6ab"}]
+                        'featureType': 'poi.park',
+                        'elementType': 'geometry',
+                        'stylers': [{'color': '#bde6ab'}]
                     }, {
-                        "featureType": "road",
-                        "elementType": "geometry.stroke",
-                        "stylers": [{"visibility": "off"}]
+                        'featureType': 'road',
+                        'elementType': 'geometry.stroke',
+                        'stylers': [{'visibility': 'off'}]
                     }, {
-                        "featureType": "road",
-                        "elementType": "labels",
-                        "stylers": [{"visibility": "off"}]
+                        'featureType': 'road',
+                        'elementType': 'labels',
+                        'stylers': [{'visibility': 'off'}]
                     }, {
-                        "featureType": "road.highway",
-                        "elementType": "geometry.fill",
-                        "stylers": [{"color": "#ffe15f"}]
+                        'featureType': 'road.highway',
+                        'elementType': 'geometry.fill',
+                        'stylers': [{'color': '#ffe15f'}]
                     }, {
-                        "featureType": "road.highway",
-                        "elementType": "geometry.stroke",
-                        "stylers": [{"color": "#efd151"}]
+                        'featureType': 'road.highway',
+                        'elementType': 'geometry.stroke',
+                        'stylers': [{'color': '#efd151'}]
                     }, {
-                        "featureType": "road.arterial",
-                        "elementType": "geometry.fill",
-                        "stylers": [{"color": "#ffffff"}]
+                        'featureType': 'road.arterial',
+                        'elementType': 'geometry.fill',
+                        'stylers': [{'color': '#ffffff'}]
                     }, {
-                        "featureType": "road.local",
-                        "elementType": "geometry.fill",
-                        "stylers": [{"color": "black"}]
+                        'featureType': 'road.local',
+                        'elementType': 'geometry.fill',
+                        'stylers': [{'color': 'black'}]
                     }, {
-                        "featureType": "transit.station.airport",
-                        "elementType": "geometry.fill",
-                        "stylers": [{"color": "#cfb2db"}]
-                    }, {"featureType": "water", "elementType": "geometry", "stylers": [{"color": "#a2daf2"}]}]
+                        'featureType': 'transit.station.airport',
+                        'elementType': 'geometry.fill',
+                        'stylers': [{'color': '#cfb2db'}]
+                    }, {'featureType': 'water', 'elementType': 'geometry', 'stylers': [{'color': '#a2daf2'}]}]
                 });
             }
         });
@@ -174,7 +178,7 @@ include('js/jquery.easing.1.3.js');
 
 /* WOW
  ========================================================*/
-;
+
 (function ($) {
     var o = $('html');
 
@@ -191,7 +195,7 @@ include('js/jquery.easing.1.3.js');
 
 /* Mailform
  =============================================*/
-;
+
 (function ($) {
     include('js/mailform/jquery.form.min.js');
     include('js/mailform/jquery.rd-mailform.min.js');
@@ -201,17 +205,17 @@ include('js/jquery.easing.1.3.js');
  ========================================================*/
 $(function () {
     // IPad/IPhone
-    var viewportmeta = document.querySelector && document.querySelector('meta[name="viewport"]'),
+    var viewportmeta = document.querySelector && document.querySelector('meta[name='+'viewport'+']'),
         ua = navigator.userAgent,
 
         gestureStart = function () {
-            viewportmeta.content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0";
+            viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0';
         },
 
         scaleFix = function () {
             if (viewportmeta && /iPhone|iPad/.test(ua) && !/Opera Mini/.test(ua)) {
-                viewportmeta.content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
-                document.addEventListener("gesturestart", gestureStart, false);
+                viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0';
+                document.addEventListener('gesturestart', gestureStart, false);
             }
         };
 
@@ -222,13 +226,13 @@ $(function () {
             result = ua.match(regM);
         if (!result) {
             $('.sf-menus li').each(function () {
-                if ($(">ul", this)[0]) {
-                    $(">a", this).toggle(
+                if ($('>ul', this)[0]) {
+                    $('>a', this).toggle(
                         function () {
                             return false;
                         },
                         function () {
-                            window.location.href = $(this).attr("href");
+                            window.location.href = $(this).attr('href');
                         }
                     );
                 }
@@ -239,11 +243,11 @@ $(function () {
 var ua = navigator.userAgent.toLocaleLowerCase(),
     regV = /ipod|ipad|iphone/gi,
     result = ua.match(regV),
-    userScale = "";
+    userScale = '';
 if (!result) {
-    userScale = ",user-scalable=0"
+    userScale = ',user-scalable=0'
 }
-document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0' + userScale + '">');
+document.write('<meta name='+'viewport'+' content='+'width=device-width,initial-scale=1.0' + userScale + '>');
 /* Camera
  ========================================================*/
 ;
