@@ -81,7 +81,6 @@
   z-index: 2; }
 
 .camera_loader {
-  /*background: #FFF url(../images/camera-loader.gif) no-repeat center;*/
   border: 1px solid #FFF;
   border-radius: 18px;
   height: 39px;
@@ -223,3 +222,5 @@
   .camera_caption p {
     font-size: 16px;
     line-height: 26px; } }
+
+/*# sourceMappingURL=camera.css.map */
