@@ -82,7 +82,7 @@
 
 .camera_loader {
   /*background: #FFF url(../images/camera-loader.gif) no-repeat center;*/
-  border: 1px solid #FFF;
+  border: 1px solid white;
   border-radius: 18px;
   height: 39px;
   left: 50%;
@@ -141,7 +141,7 @@
   left: 0;
   text-align: center;
   right: 0;
-  color: #FFF;
+  color: Black;
   -moz-transform: translateY(-46%);
   -ms-transform: translateY(-46%);
   -o-transform: translateY(-46%);
@@ -193,7 +193,7 @@
   font-family: "FontAwesome";
   font-size: 32px;
   line-height: 32px;
-  color: #fff;
+  color: black;
   top: 50%;
   margin-top: -45px;
   -moz-transition: 0.3s;
