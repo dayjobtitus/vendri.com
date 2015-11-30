@@ -169,7 +169,7 @@ article + article, p + .btn-off-1, h3 + p, p + p.lh, h3 + h5 {
     padding-left: 84px; }
     .brand_name a:before {
       position: absolute;
-      content: '\f0eb';
+      /*content: '\f0eb';*/
       color: black;
       font-size: 35px;
       line-height: 73px;
