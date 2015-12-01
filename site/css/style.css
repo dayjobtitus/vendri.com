@@ -26,8 +26,8 @@ h1 {
 
 h2 {
   font: 400 50px/55px "Raleway", sans-serif;
-  color: #fff; }
   color: lightgrey; }
+
   h2.change {
     font: 400 60px/60px "Raleway", sans-serif;
     color: Lime; }
