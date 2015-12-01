@@ -26,7 +26,8 @@ h1 {
 
 h2 {
   font: 400 50px/55px "Raleway", sans-serif;
-  color: #fff; }
+  color: lightgrey; }
+
   h2.change {
     font: 400 60px/60px "Raleway", sans-serif;
     color: Lime; }
@@ -169,8 +170,11 @@ article + article, p + .btn-off-1, h3 + p, p + p.lh, h3 + h5 {
     padding-left: 84px; }
     .brand_name a:before {
       position: absolute;
-      content: '\f0eb';
+<<<<<<< HEAD
+      /*content: '\f0eb';*/
       color: black;
+=======
+>>>>>>> refs/remotes/origin/develop
       font-size: 35px;
       line-height: 73px;
       width: 216px;
